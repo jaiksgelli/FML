@@ -1,0 +1,4600 @@
+
+api key=  3f0a291b35d827d21951f5dec2a2505c    ///search with name ,imdb id,genre,actors all movies,year
+
+
+
+all comands at a glance::
+
+***********************************************************************
+1)to get cast from movie id:
+2)get genres ids
+3)getting movie with genre id
+4)searching with year with high to low poplarity
+5)search with movie name or title and getting overview [[[movie id]]]
+search from movie id from above result   
+6)searching movies of an actor with name
+7)actor details and imdb id
+7)all movies of an actor with person id
+8)details with imdb id (infinity war)
+***********************************************************************
+
+
+
+
+
+1)to get cast from movie id:
+https://api.themoviedb.org/3/movie/tt0848228/credits?api_key=3f0a291b35d827d21951f5dec2a2505c
+
+output
+
+{
+    "id": 24428,
+    "cast": [
+        {
+            "cast_id": 46,
+            "character": "Tony Stark / Iron Man",
+            "credit_id": "52fe4495c3a368484e02b251",
+            "gender": 2,
+            "id": 3223,
+            "name": "Robert Downey Jr.",
+            "order": 0,
+            "profile_path": "/1YjdSym1jTG7xjHSI0yGGWEsw5i.jpg"
+        },
+        {
+            "cast_id": 2,
+            "character": "Steve Rogers / Captain America",
+            "credit_id": "52fe4495c3a368484e02b19b",
+            "gender": 2,
+            "id": 16828,
+            "name": "Chris Evans",
+            "order": 1,
+            "profile_path": "/kRlx7PxXkom7Daj8Z2HmcbPQB1o.jpg"
+        },
+        {
+            "cast_id": 32,
+            "character": "Bruce Banner / The Hulk",
+            "credit_id": "52fe4495c3a368484e02b221",
+            "gender": 2,
+            "id": 103,
+            "name": "Mark Ruffalo",
+            "order": 2,
+            "profile_path": "/isQ747u0MU8U9gdsNlPngjABclH.jpg"
+        },
+        {
+            "cast_id": 4,
+            "character": "Thor Odinson",
+            "credit_id": "52fe4495c3a368484e02b1a5",
+            "gender": 2,
+            "id": 74568,
+            "name": "Chris Hemsworth",
+            "order": 3,
+            "profile_path": "/lrhth7yK9p3vy6p7AabDUM1THKl.jpg"
+        },
+        {
+            "cast_id": 34,
+            "character": "Natasha Romanoff / Black Widow",
+            "credit_id": "52fe4495c3a368484e02b229",
+            "gender": 1,
+            "id": 1245,
+            "name": "Scarlett Johansson",
+            "order": 4,
+            "profile_path": "/oqvusJfmH4zN2LgdCjmB2TxetOd.jpg"
+        },
+        {
+            "cast_id": 33,
+            "character": "Clint Barton / Hawkeye",
+            "credit_id": "52fe4495c3a368484e02b225",
+            "gender": 2,
+            "id": 17604,
+            "name": "Jeremy Renner",
+            "order": 5,
+            "profile_path": "/l6CxIOFCjF65298teEJd5mCnPDO.jpg"
+        },
+        {
+            "cast_id": 35,
+            "character": "Loki",
+            "credit_id": "52fe4495c3a368484e02b22d",
+            "gender": 2,
+            "id": 91606,
+            "name": "Tom Hiddleston",
+            "order": 6,
+            "profile_path": "/qB1lHPFBPIzw6I7EvsciZ5wyUNS.jpg"
+        },
+        {
+            "cast_id": 36,
+            "character": "Nick Fury",
+            "credit_id": "52fe4495c3a368484e02b231",
+            "gender": 2,
+            "id": 2231,
+            "name": "Samuel L. Jackson",
+            "order": 7,
+            "profile_path": "/jyFUkDAP0XXHQDsDhufZWZG25y.jpg"
+        },
+        {
+            "cast_id": 38,
+            "character": "Agent Phil Coulson",
+            "credit_id": "52fe4495c3a368484e02b239",
+            "gender": 2,
+            "id": 9048,
+            "name": "Clark Gregg",
+            "order": 8,
+            "profile_path": "/t8CLS2Zcy7IjcZkE1vtxl40h9rh.jpg"
+        },
+        {
+            "cast_id": 37,
+            "character": "Agent Maria Hill",
+            "credit_id": "52fe4495c3a368484e02b235",
+            "gender": 1,
+            "id": 71189,
+            "name": "Cobie Smulders",
+            "order": 9,
+            "profile_path": "/7TIENKNwDdKSuYqyTENKtCznkCG.jpg"
+        },
+        {
+            "cast_id": 41,
+            "character": "Erik Selvig",
+            "credit_id": "52fe4495c3a368484e02b241",
+            "gender": 2,
+            "id": 1640,
+            "name": "Stellan Skarsgård",
+            "order": 10,
+            "profile_path": "/zSCU2agleLtJEvzj98jEesVhBxa.jpg"
+        },
+        {
+            "cast_id": 40,
+            "character": "Virginia \"Pepper\" Potts",
+            "credit_id": "52fe4495c3a368484e02b23d",
+            "gender": 1,
+            "id": 12052,
+            "name": "Gwyneth Paltrow",
+            "order": 11,
+            "profile_path": "/8x3jpWD7DEvyMXO1FOjwNdd1UZT.jpg"
+        },
+        {
+            "cast_id": 64,
+            "character": "Agent Jasper Sitwell",
+            "credit_id": "52fe4495c3a368484e02b285",
+            "gender": 2,
+            "id": 1018947,
+            "name": "Maximiliano Hernández",
+            "order": 12,
+            "profile_path": "/4oakQGpzryNgjA2gGnAgxGzbH9m.jpg"
+        },
+        {
+            "cast_id": 42,
+            "character": "J.A.R.V.I.S. (voice)",
+            "credit_id": "52fe4495c3a368484e02b245",
+            "gender": 2,
+            "id": 6162,
+            "name": "Paul Bettany",
+            "order": 13,
+            "profile_path": "/1zmr8C7TCqsoCjDVKJycVp2wWyf.jpg"
+        },
+        {
+            "cast_id": 66,
+            "character": "The Other",
+            "credit_id": "52fe4495c3a368484e02b28d",
+            "gender": 2,
+            "id": 1214673,
+            "name": "Alexis Denisof",
+            "order": 14,
+            "profile_path": "/hAcTJxSbSPHLfa59D8mnJOzxpmE.jpg"
+        },
+        {
+            "cast_id": 47,
+            "character": "World Security Council",
+            "credit_id": "52fe4495c3a368484e02b255",
+            "gender": 2,
+            "id": 6280,
+            "name": "Powers Boothe",
+            "order": 15,
+            "profile_path": "/3nNL6AvMAYq0BmHKM79RnRZVq3i.jpg"
+        },
+        {
+            "cast_id": 44,
+            "character": "World Security Council",
+            "credit_id": "52fe4495c3a368484e02b249",
+            "gender": 1,
+            "id": 14464,
+            "name": "Jenny Agutter",
+            "order": 16,
+            "profile_path": "/2AwYEHV0cXXo3vtjiuwHMEkqh6R.jpg"
+        },
+        {
+            "cast_id": 50,
+            "character": "World Security Council",
+            "credit_id": "52fe4495c3a368484e02b25d",
+            "gender": 2,
+            "id": 188758,
+            "name": "Arthur Darbinyan",
+            "order": 17,
+            "profile_path": "/efj5VJqc2tlZ15aesmMXit3oner.jpg"
+        },
+        {
+            "cast_id": 51,
+            "character": "World Security Council",
+            "credit_id": "52fe4495c3a368484e02b261",
+            "gender": 2,
+            "id": 168246,
+            "name": "Donald Li",
+            "order": 18,
+            "profile_path": "/7TeLJzqIoSUMAZJRkSLMp53wujn.jpg"
+        },
+        {
+            "cast_id": 53,
+            "character": "Security Guard",
+            "credit_id": "52fe4495c3a368484e02b269",
+            "gender": 2,
+            "id": 5048,
+            "name": "Harry Dean Stanton",
+            "order": 19,
+            "profile_path": "/nDSav6v9Z8dSJSXoooT2g0LjbCd.jpg"
+        },
+        {
+            "cast_id": 63,
+            "character": "Georgi Luchkov",
+            "credit_id": "52fe4495c3a368484e02b281",
+            "gender": 2,
+            "id": 43553,
+            "name": "Jerzy Skolimowski",
+            "order": 20,
+            "profile_path": "/sBzhVnGFIjpA9gL4okmLhafS4CJ.jpg"
+        },
+        {
+            "cast_id": 68,
+            "character": "Police Officer",
+            "credit_id": "52fe4495c3a368484e02b295",
+            "gender": 0,
+            "id": 1224022,
+            "name": "Enver Gjokaj",
+            "order": 21,
+            "profile_path": "/xatmqOREk6e051ZgaO4VSv4HCnr.jpg"
+        },
+        {
+            "cast_id": 45,
+            "character": "Shield Pilot",
+            "credit_id": "52fe4495c3a368484e02b24d",
+            "gender": 2,
+            "id": 101522,
+            "name": "Walter Perez",
+            "order": 22,
+            "profile_path": "/9huEhMUi4x5I2RSaIjvoP5mbP67.jpg"
+        },
+        {
+            "cast_id": 52,
+            "character": "Waitress",
+            "credit_id": "52fe4495c3a368484e02b265",
+            "gender": 1,
+            "id": 34486,
+            "name": "Ashley Johnson",
+            "order": 23,
+            "profile_path": "/2zIDMXy9680S7ioPo9jpZUq5qG1.jpg"
+        },
+        {
+            "cast_id": 48,
+            "character": "Old Man in TV Report",
+            "credit_id": "52fe4495c3a368484e02b259",
+            "gender": 2,
+            "id": 7624,
+            "name": "Stan Lee",
+            "order": 24,
+            "profile_path": "/dTr2gJPL7jELKVkcjtoNx80uVKR.jpg"
+        },
+        {
+            "cast_id": 231,
+            "character": "Hulk (voice)",
+            "credit_id": "5587c776c3a368273b006ead",
+            "gender": 0,
+            "id": 19137,
+            "name": "Lou Ferrigno",
+            "order": 25,
+            "profile_path": "/vDBZd0xCIl8l1tDLDxPqAHSViFS.jpg"
+        },
+        {
+            "cast_id": 188,
+            "character": "Thanos",
+            "credit_id": "552a8df6c3a36858d60038d8",
+            "gender": 2,
+            "id": 150194,
+            "name": "Damion Poitier",
+            "order": 26,
+            "profile_path": "/zBoq4SAauhVmbHSyWZXYXvA36Ky.jpg"
+        },
+        {
+            "cast_id": 54,
+            "character": "Carrier Bridge Techs",
+            "credit_id": "52fe4495c3a368484e02b26d",
+            "gender": 1,
+            "id": 81959,
+            "name": "Alicia Sixtos",
+            "order": 27,
+            "profile_path": "/d26uuvEXN4xIrGaLNOwbwNrX6Z8.jpg"
+        },
+        {
+            "cast_id": 57,
+            "character": "Gala Scientist",
+            "credit_id": "52fe4495c3a368484e02b275",
+            "gender": 0,
+            "id": 1033652,
+            "name": "Dieter Riesle",
+            "order": 28,
+            "profile_path": "/yN8sg3spmSs651w0HZVdCdA9HSh.jpg"
+        },
+        {
+            "cast_id": 61,
+            "character": "Celebration Montage Interviewee",
+            "credit_id": "52fe4495c3a368484e02b279",
+            "gender": 2,
+            "id": 79079,
+            "name": "Jamie McShane",
+            "order": 29,
+            "profile_path": "/clBmHn1I4WzawHYm5jGPfX44ysp.jpg"
+        },
+        {
+            "cast_id": 62,
+            "character": "Tall Thug",
+            "credit_id": "52fe4495c3a368484e02b27d",
+            "gender": 2,
+            "id": 51303,
+            "name": "Jeff Wolfe",
+            "order": 30,
+            "profile_path": "/iUALrUyPe6uq9kZQNHNf8cW5yKA.jpg"
+        },
+        {
+            "cast_id": 67,
+            "character": "Senator Boynton",
+            "credit_id": "52fe4495c3a368484e02b291",
+            "gender": 2,
+            "id": 19151,
+            "name": "James Eckhouse",
+            "order": 31,
+            "profile_path": "/4CUK6M7fGVK5Z1Qg65rMLDI6BdO.jpg"
+        },
+        {
+            "cast_id": 197,
+            "character": "NASA Scientist",
+            "credit_id": "55872353c3a36827460064e8",
+            "gender": 1,
+            "id": 60120,
+            "name": "Tina Benko",
+            "order": 32,
+            "profile_path": "/oG8RmZ2vzuIgl6t5lHEa1CW7DKf.jpg"
+        },
+        {
+            "cast_id": 198,
+            "character": "Weaselly Thug",
+            "credit_id": "558723de9251416818000460",
+            "gender": 2,
+            "id": 1479945,
+            "name": "Kirill Nikiforov",
+            "order": 33,
+            "profile_path": "/kdIxrna0QFYq3uuAKc1wxyE54A1.jpg"
+        },
+        {
+            "cast_id": 199,
+            "character": "Young Girl",
+            "credit_id": "5587241dc3a36837e9004ed2",
+            "gender": 1,
+            "id": 1479946,
+            "name": "M'laah Kaur Singh",
+            "order": 34,
+            "profile_path": "/7CitC5nS31K7VBfN14iLO9KelNr.jpg"
+        },
+        {
+            "cast_id": 200,
+            "character": "Calcutta Woman",
+            "credit_id": "558724a5c3a36836ea004b35",
+            "gender": 1,
+            "id": 86157,
+            "name": "Rashmi Rustagi",
+            "order": 35,
+            "profile_path": "/r5eG6WOSD8XklBjvB3fEg1kAdUI.jpg"
+        },
+        {
+            "cast_id": 201,
+            "character": "Carrier BridgeTechs",
+            "credit_id": "5587254bc3a3682746006501",
+            "gender": 2,
+            "id": 60878,
+            "name": "Warren Kole",
+            "order": 36,
+            "profile_path": "/eRtZcPd1zA6jHEBEUWgP4LpekVQ.jpg"
+        },
+        {
+            "cast_id": 202,
+            "character": "Carrier BridgeTechs",
+            "credit_id": "55872600c3a3682746006509",
+            "gender": 2,
+            "id": 66525,
+            "name": "Jesse Garcia",
+            "order": 37,
+            "profile_path": "/jsEZz7z1wI95277m7S9YM1dbVYb.jpg"
+        },
+        {
+            "cast_id": 203,
+            "character": "German Old Man",
+            "credit_id": "558726ab9251416b00000f16",
+            "gender": 2,
+            "id": 87128,
+            "name": "Kenneth Tigar",
+            "order": 38,
+            "profile_path": "/sSdACkgPQYBJVQnd8B6uWpQPjMY.jpg"
+        },
+        {
+            "cast_id": 204,
+            "character": "Maintenance Guy",
+            "credit_id": "558727449251411dec0057c1",
+            "gender": 2,
+            "id": 1479957,
+            "name": "Josh Cowdery",
+            "order": 39,
+            "profile_path": "/mV5d7ZshhMMhiFcq5i02quGNxA4.jpg"
+        },
+        {
+            "cast_id": 205,
+            "character": "Japanese Family",
+            "credit_id": "5587277e9251411dec0057c9",
+            "gender": 2,
+            "id": 1479959,
+            "name": "Katsumi Komatsu",
+            "order": 40,
+            "profile_path": "/vG6lpBiWONtCKVTNIurorXZB5CS.jpg"
+        },
+        {
+            "cast_id": 206,
+            "character": "Japanese Family",
+            "credit_id": "558727b1c3a3682746006516",
+            "gender": 0,
+            "id": 1479961,
+            "name": "Yumiko Komatsu",
+            "order": 41,
+            "profile_path": null
+        },
+        {
+            "cast_id": 207,
+            "character": "Japanese Family",
+            "credit_id": "558727d892514137bc006946",
+            "gender": 0,
+            "id": 1479962,
+            "name": "Momoko Komatsu",
+            "order": 42,
+            "profile_path": null
+        },
+        {
+            "cast_id": 208,
+            "character": "Police Sergeant",
+            "credit_id": "5587280e9251416b00000f31",
+            "gender": 2,
+            "id": 2256,
+            "name": "Robert Clohessy",
+            "order": 43,
+            "profile_path": "/mtXOGkDYBZhcbKaNbcSYfZJsUY7.jpg"
+        },
+        {
+            "cast_id": 209,
+            "character": "Office Woman",
+            "credit_id": "558728b9c3a368273500612e",
+            "gender": 0,
+            "id": 1479967,
+            "name": "Fernanda Toker",
+            "order": 44,
+            "profile_path": null
+        },
+        {
+            "cast_id": 210,
+            "character": "News Reporter",
+            "credit_id": "5587b9629251416b00001b20",
+            "gender": 1,
+            "id": 1480042,
+            "name": "Andrea Vecchio",
+            "order": 45,
+            "profile_path": "/6V6AdojcJetB5K6lqLxshVmaXr0.jpg"
+        },
+        {
+            "cast_id": 211,
+            "character": "News Reporter",
+            "credit_id": "5587b9a792514168180010f7",
+            "gender": 1,
+            "id": 1480043,
+            "name": "Robin Swoboda",
+            "order": 46,
+            "profile_path": "/3dhqgeTLsBMMlZRgdOd4PMGoKdF.jpg"
+        },
+        {
+            "cast_id": 212,
+            "character": "Faceless Pilot",
+            "credit_id": "5587b9e692514179f600356e",
+            "gender": 2,
+            "id": 1480044,
+            "name": "Brent McGee",
+            "order": 47,
+            "profile_path": "/jwObq47Z45cr3cMTlZLD1DRM8Bj.jpg"
+        },
+        {
+            "cast_id": 213,
+            "character": "Celebration Montage Interviewee",
+            "credit_id": "5587ba32c3a3683853005d35",
+            "gender": 2,
+            "id": 1203089,
+            "name": "Michael Zhang",
+            "order": 48,
+            "profile_path": "/tEk1mW7V4weBnXWwkpSTy3RR5MM.jpg"
+        },
+        {
+            "cast_id": 214,
+            "character": "Celebration Montage Interviewee",
+            "credit_id": "5587ba9c9251411efc0004f5",
+            "gender": 2,
+            "id": 98626,
+            "name": "William-Christopher Stephens",
+            "order": 49,
+            "profile_path": "/wNFPBwd9pL7y8x0hcOIhoWQ0Ax2.jpg"
+        },
+        {
+            "cast_id": 215,
+            "character": "Celebration Montage Interviewee",
+            "credit_id": "5587bb45c3a368273b006dc0",
+            "gender": 1,
+            "id": 1480045,
+            "name": "Kelley Robins",
+            "order": 50,
+            "profile_path": "/mnQcQXy2I8cstEPu1fXl7eycC7n.jpg"
+        },
+        {
+            "cast_id": 216,
+            "character": "Shawna Lynde",
+            "credit_id": "5587bbd39251411e8d006114",
+            "gender": 1,
+            "id": 156342,
+            "name": "Romy Rosemont",
+            "order": 51,
+            "profile_path": "/dzhrqpUa7W6lVjuigj0G28WrHQz.jpg"
+        },
+        {
+            "cast_id": 217,
+            "character": "Himself",
+            "credit_id": "5587c028c3a3683853005dae",
+            "gender": 2,
+            "id": 1480047,
+            "name": "Pat Kiernan",
+            "order": 52,
+            "profile_path": "/vgUYqODOvMlsM7lgyeNDCGboH4v.jpg"
+        },
+        {
+            "cast_id": 218,
+            "character": "Himself",
+            "credit_id": "5587c0a2c3a36827460072f9",
+            "gender": 2,
+            "id": 1234512,
+            "name": "Thomas Roberts",
+            "order": 53,
+            "profile_path": "/7QgyGz2YHPVtR6zIyJB52KieZ4C.jpg"
+        },
+        {
+            "cast_id": 65,
+            "character": "Woman in Restaurant (uncredited)",
+            "credit_id": "52fe4495c3a368484e02b289",
+            "gender": 0,
+            "id": 1263294,
+            "name": "Jillian Morgese",
+            "order": 54,
+            "profile_path": "/lxnn0PCMaDhBABueZYoV0JBlzMg.jpg"
+        },
+        {
+            "cast_id": 219,
+            "character": "German Pedestrian (uncredited)",
+            "credit_id": "5587c1489251417f6f006e84",
+            "gender": 1,
+            "id": 1480048,
+            "name": "Catherine Anderson",
+            "order": 55,
+            "profile_path": "/5T3Kiad1dRPr8lhaZia7oZuFOff.jpg"
+        },
+        {
+            "cast_id": 220,
+            "character": "Lentil Merchant (uncredited)",
+            "credit_id": "5587c18fc3a3683853005dcd",
+            "gender": 2,
+            "id": 1153698,
+            "name": "Ricardo Andres",
+            "order": 56,
+            "profile_path": "/v1pAvp8kLNImLKrDCOORo0WQ8Qu.jpg"
+        },
+        {
+            "cast_id": 221,
+            "character": "S.H.I.E.L.D. Agent (uncredited)",
+            "credit_id": "5587c3acc3a3682735006e27",
+            "gender": 2,
+            "id": 1480049,
+            "name": "Logan Bennett",
+            "order": 57,
+            "profile_path": "/dxSYLhA3ftWk4TDxkocdol4k5iY.jpg"
+        },
+        {
+            "cast_id": 222,
+            "character": "Celebration Montage Man Shaving Beard (uncredited)",
+            "credit_id": "5587c406c3a3683853005e07",
+            "gender": 2,
+            "id": 1191953,
+            "name": "Mayank Bhatter",
+            "order": 58,
+            "profile_path": "/caE4ZU2W5eKlitJv5EvnxhGhpE6.jpg"
+        },
+        {
+            "cast_id": 223,
+            "character": "Gala Guest (uncredited)",
+            "credit_id": "5587c4c9c3a368273b006e86",
+            "gender": 1,
+            "id": 1480051,
+            "name": "Sharita Bone",
+            "order": 59,
+            "profile_path": "/2hBhG9hKH9ERYfZtjGE2mPoqR7K.jpg"
+        },
+        {
+            "cast_id": 224,
+            "character": "Museum Gala Patron (uncredited)",
+            "credit_id": "5587c4fa9251411dec006508",
+            "gender": 2,
+            "id": 1480053,
+            "name": "Jason Botsford",
+            "order": 60,
+            "profile_path": "/jHs3kU44uPcqVEQz7ely2jsKf0X.jpg"
+        },
+        {
+            "cast_id": 225,
+            "character": "Stuttgart Biergarten patron (uncredited)",
+            "credit_id": "5587c541c3a36836ea00585e",
+            "gender": 0,
+            "id": 1480055,
+            "name": "Mary Kate Campbell",
+            "order": 61,
+            "profile_path": null
+        },
+        {
+            "cast_id": 226,
+            "character": "S.H.I.E.L.D. Guard (uncredited)",
+            "credit_id": "5587c577925141681800121b",
+            "gender": 0,
+            "id": 1403346,
+            "name": "Gene N. Chavez",
+            "order": 62,
+            "profile_path": "/7GAGzDZGnf1PPJCLfeISI0y1jx3.jpg"
+        },
+        {
+            "cast_id": 227,
+            "character": "Gala Guest (uncredited)",
+            "credit_id": "5587c608c3a368274600738d",
+            "gender": 1,
+            "id": 1480056,
+            "name": "Layla Cushman",
+            "order": 63,
+            "profile_path": "/2IsPTL5RPkWNWaRIk1i4so1QdWH.jpg"
+        },
+        {
+            "cast_id": 228,
+            "character": "Soldier (uncredited)",
+            "credit_id": "5587c65bc3a36827460073a1",
+            "gender": 2,
+            "id": 1466605,
+            "name": "Robert Dean",
+            "order": 64,
+            "profile_path": "/ssjFH4Zv1PlcNegdKi5FqdJRLFx.jpg"
+        },
+        {
+            "cast_id": 229,
+            "character": "Museum Gala Guest (uncredited)",
+            "credit_id": "5587c70d9251411e8d006275",
+            "gender": 0,
+            "id": 1480057,
+            "name": "Rick Dremann",
+            "order": 65,
+            "profile_path": null
+        },
+        {
+            "cast_id": 230,
+            "character": "Captain Putz (uncredited)",
+            "credit_id": "5587c73e925141681800124c",
+            "gender": 2,
+            "id": 1480058,
+            "name": "Jeffrey Feingold",
+            "order": 66,
+            "profile_path": "/wmB9ACcKoL0pZd2usmphYeB4PUL.jpg"
+        },
+        {
+            "cast_id": 232,
+            "character": "Pedestrian (uncredited)",
+            "credit_id": "5587c8319251411dec00654b",
+            "gender": 2,
+            "id": 1354406,
+            "name": "Rod Fielder",
+            "order": 67,
+            "profile_path": "/mZkudGiL7abjSosmJnPTEvWmOZw.jpg"
+        },
+        {
+            "cast_id": 233,
+            "character": "Stuttgart Citizen (uncredited)",
+            "credit_id": "5587c8bbc3a36827460073e1",
+            "gender": 0,
+            "id": 1480060,
+            "name": "Eric Frank",
+            "order": 68,
+            "profile_path": null
+        },
+        {
+            "cast_id": 234,
+            "character": "S.H.I.E.L.D. Agent (uncredited)",
+            "credit_id": "5587c972c3a368274c006a1c",
+            "gender": 2,
+            "id": 1480065,
+            "name": "Israel Hall",
+            "order": 69,
+            "profile_path": "/uVEsA9tjCeJ8uC4QdfXiwJpG7Y9.jpg"
+        },
+        {
+            "cast_id": 235,
+            "character": "Museum Gala Patron (uncredited)",
+            "credit_id": "5587c9ee925141681800126e",
+            "gender": 0,
+            "id": 1480066,
+            "name": "Carmen Dee Harris",
+            "order": 70,
+            "profile_path": null
+        },
+        {
+            "cast_id": 236,
+            "character": "Mercenary (uncredited)",
+            "credit_id": "5587ca319251411efc000648",
+            "gender": 2,
+            "id": 1480067,
+            "name": "Alexander Christopher Jones",
+            "order": 71,
+            "profile_path": "/vEMQgLVlWqehkLvHdR0iVtJDvTD.jpg"
+        },
+        {
+            "cast_id": 237,
+            "character": "Pedestrian (uncredited)",
+            "credit_id": "5587d164c3a368273b006f8e",
+            "gender": 2,
+            "id": 1480085,
+            "name": "Mike Karban",
+            "order": 72,
+            "profile_path": "/3uIuKvTqJ98qjTILMNCsGihHC3G.jpg"
+        },
+        {
+            "cast_id": 238,
+            "character": "S.H.I.E.L.D. Agent (uncredited)",
+            "credit_id": "5587d1a6c3a36827460074cc",
+            "gender": 2,
+            "id": 1480087,
+            "name": "Demoine Kinney",
+            "order": 73,
+            "profile_path": "/jkSyyUqqC7nGJiNsMJTTmDlhlci.jpg"
+        },
+        {
+            "cast_id": 239,
+            "character": "Stuttgart Citizen (uncredited)",
+            "credit_id": "5587d25dc3a36827460074e2",
+            "gender": 2,
+            "id": 1480091,
+            "name": "Andrew Knode",
+            "order": 74,
+            "profile_path": "/wdgA9J6iVIbfWx7MKqyOyGwmQKV.jpg"
+        },
+        {
+            "cast_id": 240,
+            "character": "Hostage (uncredited)",
+            "credit_id": "5587d2bb9251416b00001d78",
+            "gender": 1,
+            "id": 1480096,
+            "name": "Annette Lawless",
+            "order": 75,
+            "profile_path": "/ihT349vQl4DcibfCgnSdLQIsY7A.jpg"
+        },
+        {
+            "cast_id": 241,
+            "character": "Limo Driver (uncredited)",
+            "credit_id": "5587d2f29251411e8d006363",
+            "gender": 1,
+            "id": 1480097,
+            "name": "Kimberly J. Mahoney",
+            "order": 76,
+            "profile_path": "/3w46G0ICDdU2UKQbohO9MbJhHpi.jpg"
+        },
+        {
+            "cast_id": 242,
+            "character": "Helicarrier Medical Team Leader (uncredited)",
+            "credit_id": "5587e1949251415aa90005ed",
+            "gender": 2,
+            "id": 1480124,
+            "name": "Todd Manes",
+            "order": 77,
+            "profile_path": "/jvZhB6HSFLxNTpskEVvqzTxYf9P.jpg"
+        },
+        {
+            "cast_id": 243,
+            "character": "Stuttgart Driver (uncredited)",
+            "credit_id": "5587e25a9251411dec006758",
+            "gender": 0,
+            "id": 1480128,
+            "name": "Jorge Mardel",
+            "order": 78,
+            "profile_path": "/kYh48kZ4wGGysoexHTMXPhaZv1N.jpg"
+        },
+        {
+            "cast_id": 244,
+            "character": "Civilian (uncredited)",
+            "credit_id": "5587e2e4c3a3683365005f73",
+            "gender": 1,
+            "id": 1480130,
+            "name": "Tiffany Sander McKenzie",
+            "order": 79,
+            "profile_path": "/2Gvt77UAINub19VwqF1dxpCEqaR.jpg"
+        },
+        {
+            "cast_id": 245,
+            "character": "Cafe Patron (uncredited)",
+            "credit_id": "5587e31b9251411e8d0064c0",
+            "gender": 2,
+            "id": 1480132,
+            "name": "Michael McMillan",
+            "order": 80,
+            "profile_path": "/l2N2j9MZztSdEUN4MiEADCELArB.jpg"
+        },
+        {
+            "cast_id": 246,
+            "character": "Guard (uncredited)",
+            "credit_id": "5587e3f19251416b00001f01",
+            "gender": 2,
+            "id": 1001496,
+            "name": "Sean Meehan",
+            "order": 81,
+            "profile_path": "/lHtDjo9qxqbYJJkqw691yNUCzSV.jpg"
+        },
+        {
+            "cast_id": 247,
+            "character": "Waitress (uncredited)",
+            "credit_id": "5587e5fe9251411e8d0064fa",
+            "gender": 1,
+            "id": 1480144,
+            "name": "Joti Nagra",
+            "order": 82,
+            "profile_path": "/rAuG4k7HXzDyQx4g0XoOlEMHZC9.jpg"
+        },
+        {
+            "cast_id": 248,
+            "character": "Gala Museum Patron (uncredited)",
+            "credit_id": "5587e637c3a36827460076bf",
+            "gender": 1,
+            "id": 1480146,
+            "name": "Holly Neelie",
+            "order": 83,
+            "profile_path": "/7FBv7asTCZ2fCKL33KPfZxHSj9B.jpg"
+        },
+        {
+            "cast_id": 249,
+            "character": "Extra (uncredited)",
+            "credit_id": "5587e6779251416b00001f29",
+            "gender": 2,
+            "id": 1480148,
+            "name": "Caleb Daniel Noal",
+            "order": 84,
+            "profile_path": "/q3sirYG0Zbfp9JuRVGfrCv19gtW.jpg"
+        },
+        {
+            "cast_id": 250,
+            "character": "New York City Pedestrian (uncredited)",
+            "credit_id": "5587e77cc3a368273b00716c",
+            "gender": 0,
+            "id": 1480150,
+            "name": "Joseph O'Brien",
+            "order": 85,
+            "profile_path": null
+        },
+        {
+            "cast_id": 251,
+            "character": "S.H.I.E.L.D. Agent (uncredited)",
+            "credit_id": "5587e8cfc3a368273b00718b",
+            "gender": 2,
+            "id": 1480152,
+            "name": "Jeremy Orr",
+            "order": 86,
+            "profile_path": "/4fwIUcP1lkC2CSewdefglieIDPL.jpg"
+        },
+        {
+            "cast_id": 252,
+            "character": "New York Pedestrian (uncredited)",
+            "credit_id": "5587e90292514179f600394d",
+            "gender": 0,
+            "id": 1480153,
+            "name": "Nate Paige",
+            "order": 87,
+            "profile_path": null
+        },
+        {
+            "cast_id": 253,
+            "character": "Shiel Employee (uncredited)",
+            "credit_id": "5587e93a9251415aa9000687",
+            "gender": 2,
+            "id": 1365516,
+            "name": "Martin Palmer",
+            "order": 88,
+            "profile_path": "/nHNZ9uJ02o1ID1Yr5IyRwwcVD73.jpg"
+        },
+        {
+            "cast_id": 254,
+            "character": "Museum Gala Guest (uncredited)",
+            "credit_id": "5587f00fc3a36833650060b7",
+            "gender": 1,
+            "id": 1480198,
+            "name": "Maria Perossa",
+            "order": 89,
+            "profile_path": "/gf4Hl7iCPEPsfNL7CATKIaLBiOL.jpg"
+        },
+        {
+            "cast_id": 255,
+            "character": "Extra (uncredited)",
+            "credit_id": "5587f04492514168180015ac",
+            "gender": 2,
+            "id": 1480199,
+            "name": "Caleb Pieplow",
+            "order": 90,
+            "profile_path": "/4IOic0eRnIZZFBu5LNui9LFsFub.jpg"
+        },
+        {
+            "cast_id": 256,
+            "character": "Helicarrier Shield Agent (uncredited)",
+            "credit_id": "5587f07fc3a3683853006220",
+            "gender": 2,
+            "id": 1480200,
+            "name": "Alexander Daniel Pimentel",
+            "order": 91,
+            "profile_path": "/61mmYDFXhzoLGWp51dKdzMlahhR.jpg"
+        },
+        {
+            "cast_id": 257,
+            "character": "S.H.I.EL.D Agent - Loki Escort (uncredited)",
+            "credit_id": "5587f1ef92514168180015cd",
+            "gender": 2,
+            "id": 1480202,
+            "name": "Frank Powers",
+            "order": 92,
+            "profile_path": "/gisDi6upDyITIEFAenbncAVV912.jpg"
+        },
+        {
+            "cast_id": 258,
+            "character": "S.H.I.E.L.D. Agent (uncredited)",
+            "credit_id": "5587f2b6c3a36836ea005c11",
+            "gender": 2,
+            "id": 1371850,
+            "name": "Jaime Powers",
+            "order": 93,
+            "profile_path": "/tFvFpbi1EnBZWLf1MWPuUVmUlFk.jpg"
+        },
+        {
+            "cast_id": 259,
+            "character": "Stuttgart Gala Patron (uncredited)",
+            "credit_id": "5587f33792514168180015e6",
+            "gender": 2,
+            "id": 1480204,
+            "name": "Brent Reichert",
+            "order": 94,
+            "profile_path": "/ltoJixbHwY7OXuRkv8iintyVNCL.jpg"
+        },
+        {
+            "cast_id": 260,
+            "character": "S.H.E.I.L.D. Agent (uncredited)",
+            "credit_id": "5587f3ca9251416b00002052",
+            "gender": 2,
+            "id": 1480208,
+            "name": "Kelly Ruble",
+            "order": 95,
+            "profile_path": "/1lATMNLTQKCUTrNNrMWwISe0ahb.jpg"
+        },
+        {
+            "cast_id": 261,
+            "character": "Restaurant Patron (uncredited)",
+            "credit_id": "5587f4009251411efc0009f0",
+            "gender": 1,
+            "id": 1454362,
+            "name": "Gina Sarno",
+            "order": 96,
+            "profile_path": "/r0dXsObuAds3UainknypJcJj5Ds.jpg"
+        },
+        {
+            "cast_id": 262,
+            "character": "New York City Police Officer (uncredited)",
+            "credit_id": "5587f4a09251417f6f0072ec",
+            "gender": 2,
+            "id": 1480209,
+            "name": "Robert B. Schneider IV",
+            "order": 97,
+            "profile_path": "/iRAYJfnTJ4ba3KRCdKELbbtucNa.jpg"
+        },
+        {
+            "cast_id": 263,
+            "character": "New York Police Officer in Firefight (uncredited)",
+            "credit_id": "5587f4d292514179f6003a45",
+            "gender": 2,
+            "id": 1480210,
+            "name": "Jeff Seich",
+            "order": 98,
+            "profile_path": "/vtlhRg7O2shyaOofOY07GP8kqan.jpg"
+        },
+        {
+            "cast_id": 264,
+            "character": "Stuttgart Beer Garden Patron (uncredited)",
+            "credit_id": "5587f506c3a368274600784b",
+            "gender": 0,
+            "id": 1480211,
+            "name": "Christina Shaffer",
+            "order": 99,
+            "profile_path": null
+        },
+        {
+            "cast_id": 265,
+            "character": "Lab Tech (uncredited)",
+            "credit_id": "5587f53cc3a3683853006264",
+            "gender": 1,
+            "id": 1480212,
+            "name": "Alonda Shevette",
+            "order": 100,
+            "profile_path": "/gA6Dqc7q0v78vRwNIIxPvo15Uff.jpg"
+        },
+        {
+            "cast_id": 266,
+            "character": "Museum Gala Patron (uncredited)",
+            "credit_id": "5587f579c3a368274600785a",
+            "gender": 2,
+            "id": 1480213,
+            "name": "Douglas Slygh",
+            "order": 101,
+            "profile_path": "/q1JdKgf1tYBbwIrkVDFchBdruCy.jpg"
+        },
+        {
+            "cast_id": 267,
+            "character": "S.H.I.E.L.D. Agent #4 (uncredited)",
+            "credit_id": "5587f5f5c3a36836ea005c50",
+            "gender": 2,
+            "id": 6037,
+            "name": "Colin Strause",
+            "order": 102,
+            "profile_path": "/r5JVeKjHtc394izdBJs9T0hCH7L.jpg"
+        },
+        {
+            "cast_id": 268,
+            "character": "Gala Patron (uncredited)",
+            "credit_id": "5587f6689251417f6f007314",
+            "gender": 2,
+            "id": 1480218,
+            "name": "Robert P. Thitoff",
+            "order": 103,
+            "profile_path": "/9Tsny7MEaquHUbZ6URBqllFYVDr.jpg"
+        },
+        {
+            "cast_id": 269,
+            "character": "S.H.I.E.L.D. Agent (uncredited)",
+            "credit_id": "5587f6fe9251416b00002096",
+            "gender": 0,
+            "id": 1480219,
+            "name": "George Thomas",
+            "order": 104,
+            "profile_path": null
+        },
+        {
+            "cast_id": 270,
+            "character": "Pedestrian (uncredited)",
+            "credit_id": "5587f7d0c3a36836ea005c6e",
+            "gender": 0,
+            "id": 1480220,
+            "name": "Shane Thompson",
+            "order": 105,
+            "profile_path": "/tqD5Ez4LgFQOV3SxUnOrlibGQe0.jpg"
+        },
+        {
+            "cast_id": 271,
+            "character": "Mercenary (uncredited)",
+            "credit_id": "5587f8049251411efc000a4e",
+            "gender": 2,
+            "id": 1480221,
+            "name": "Jerry Lee Tucker",
+            "order": 106,
+            "profile_path": "/tiRv43n0hIwtUVqDORT4c4qxouM.jpg"
+        },
+        {
+            "cast_id": 272,
+            "character": "Child on News #1 (uncredited)",
+            "credit_id": "5587f844c3a36836ea005c7d",
+            "gender": 2,
+            "id": 1480222,
+            "name": "Tai Urban",
+            "order": 107,
+            "profile_path": "/9JEPaQ4xJQ4x4srkAmHiVHTZ966.jpg"
+        },
+        {
+            "cast_id": 273,
+            "character": "Running Pedestrian (uncredited)",
+            "credit_id": "5587f87d9251417f6f007338",
+            "gender": 2,
+            "id": 1480223,
+            "name": "Chris Vaina",
+            "order": 108,
+            "profile_path": "/r1uVfT7Lee9dCwJznVkLB85RfN5.jpg"
+        },
+        {
+            "cast_id": 274,
+            "character": "Sweeper (uncredited)",
+            "credit_id": "5587f8b39251416b000020b4",
+            "gender": 1,
+            "id": 1480224,
+            "name": "Sandra Weston",
+            "order": 109,
+            "profile_path": "/fzsPJto04VSMgD05RJ5tGo3qGol.jpg"
+        },
+        {
+            "cast_id": 275,
+            "character": "Barbershop (uncredited)",
+            "credit_id": "5587f8f59251411efc000a5d",
+            "gender": 2,
+            "id": 1480226,
+            "name": "Seth Zielicke",
+            "order": 110,
+            "profile_path": "/8Rf4aa0xLxJaiCF7mcxxehxODxi.jpg"
+        },
+        {
+            "cast_id": 281,
+            "character": "Tourist (uncredited)",
+            "credit_id": "57c9ee6d9251413de3001823",
+            "gender": 2,
+            "id": 1673576,
+            "name": "Alex DeCourville",
+            "order": 111,
+            "profile_path": "/76lK48skKPLE0uvPQ4wqa2OtQ8F.jpg"
+        },
+        {
+            "cast_id": 282,
+            "character": "Gala Guest (uncredited)",
+            "credit_id": "57c9f91492514155b80014d0",
+            "gender": 1,
+            "id": 1636801,
+            "name": "Debbie Scaletta",
+            "order": 112,
+            "profile_path": "/tQKHaaZLK9z6wJ3L8eEEF3dnuGs.jpg"
+        },
+        {
+            "cast_id": 283,
+            "character": "S.H.I.E.L.D agent (uncredited)",
+            "credit_id": "57ca1eef92514127950011e3",
+            "gender": 1,
+            "id": 1343164,
+            "name": "Andrea-Nichole Olivas",
+            "order": 113,
+            "profile_path": "/agjZ63qFde1CdNd6vcGKabZIf7p.jpg"
+        },
+        {
+            "cast_id": 284,
+            "character": "NYC Pedestrian (uncredited)",
+            "credit_id": "57ca2108925141278d0012b6",
+            "gender": 1,
+            "id": 1376001,
+            "name": "Tina Grimm",
+            "order": 114,
+            "profile_path": "/gVLoE5WlDTgqjneoEN9Ueum0QQM.jpg"
+        },
+        {
+            "cast_id": 287,
+            "character": "Principal (uncredited)",
+            "credit_id": "5a5ff28ec3a368776600c16e",
+            "gender": 2,
+            "id": 1962256,
+            "name": "Evan Kole",
+            "order": 115,
+            "profile_path": "/rMnLtyrejtHVn0k6ezdv3Bg2ILN.jpg"
+        }
+    ],
+    "crew": [
+        {
+            "credit_id": "52fe4495c3a368484e02b1a1",
+            "department": "Directing",
+            "gender": 2,
+            "id": 12891,
+            "job": "Director",
+            "name": "Joss Whedon",
+            "profile_path": "/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg"
+        },
+        {
+            "credit_id": "52fe4495c3a368484e02b1ab",
+            "department": "Writing",
+            "gender": 2,
+            "id": 12891,
+            "job": "Screenplay",
+            "name": "Joss Whedon",
+            "profile_path": "/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg"
+        },
+        {
+            "credit_id": "52fe4495c3a368484e02b1b1",
+            "department": "Production",
+            "gender": 2,
+            "id": 7626,
+            "job": "Executive Producer",
+            "name": "Avi Arad",
+            "profile_path": "/kIG4HF5LSywU0ZdDheDaEsxxohu.jpg"
+        },
+        {
+            "credit_id": "52fe4495c3a368484e02b1b7",
+            "department": "Production",
+            "gender": 0,
+            "id": 41018,
+            "job": "Executive Producer",
+            "name": "Chris Brigham",
+            "profile_path": "/lbWFcY3aVB8vG7tWwBXILJM8jyH.jpg"
+        },
+        {
+            "credit_id": "52fe4495c3a368484e02b1bd",
+            "department": "Production",
+            "gender": 2,
+            "id": 57027,
+            "job": "Executive Producer",
+            "name": "Louis D'Esposito",
+            "profile_path": "/pNvtXPy8kil9WWFtySahnNbvc3R.jpg"
+        },
+        {
+            "credit_id": "52fe4495c3a368484e02b1c3",
+            "department": "Production",
+            "gender": 2,
+            "id": 15277,
+            "job": "Executive Producer",
+            "name": "Jon Favreau",
+            "profile_path": "/sJSGJwGa3hjMlJNUCxF7wQwo7fb.jpg"
+        },
+        {
+            "credit_id": "52fe4495c3a368484e02b1c9",
+            "department": "Production",
+            "gender": 2,
+            "id": 10850,
+            "job": "Producer",
+            "name": "Kevin Feige",
+            "profile_path": "/AewbqQQT0FbcE358rcbopZ3zgDV.jpg"
+        },
+        {
+            "credit_id": "52fe4495c3a368484e02b1cf",
+            "department": "Sound",
+            "gender": 2,
+            "id": 37,
+            "job": "Original Music Composer",
+            "name": "Alan Silvestri",
+            "profile_path": "/chEsfnDEtRmv1bfOaNAoVEzhCc6.jpg"
+        },
+        {
+            "credit_id": "52fe4495c3a368484e02b1db",
+            "department": "Editing",
+            "gender": 2,
+            "id": 35176,
+            "job": "Editor",
+            "name": "Jeffrey Ford",
+            "profile_path": "/jcnSoKsJj7131oScRDmg8HMhK77.jpg"
+        },
+        {
+            "credit_id": "52fe4495c3a368484e02b1e1",
+            "department": "Writing",
+            "gender": 2,
+            "id": 11011,
+            "job": "Story",
+            "name": "Zak Penn",
+            "profile_path": "/tPwOS2wk8FFoWpXnDYK77bKcuWB.jpg"
+        },
+        {
+            "credit_id": "52fe4495c3a368484e02b1e7",
+            "department": "Writing",
+            "gender": 2,
+            "id": 12891,
+            "job": "Story",
+            "name": "Joss Whedon",
+            "profile_path": "/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg"
+        },
+        {
+            "credit_id": "52fe4495c3a368484e02b1f3",
+            "department": "Production",
+            "gender": 0,
+            "id": 113674,
+            "job": "Executive Producer",
+            "name": "Victoria Alonso",
+            "profile_path": "/xF7Qe1tqgk9KtY8kThKHBWhMqxc.jpg"
+        },
+        {
+            "credit_id": "52fe4495c3a368484e02b1f9",
+            "department": "Production",
+            "gender": 2,
+            "id": 113672,
+            "job": "Executive Producer",
+            "name": "Alan Fine",
+            "profile_path": "/7Ntt3WWg25ivLT8Os3LeZW1WxIC.jpg"
+        },
+        {
+            "credit_id": "52fe4495c3a368484e02b1ff",
+            "department": "Production",
+            "gender": 0,
+            "id": 113675,
+            "job": "Executive Producer",
+            "name": "Jeremy Latcham",
+            "profile_path": "/t0O2uclvVToZWwTkEBfaHHeH8fN.jpg"
+        },
+        {
+            "credit_id": "52fe4495c3a368484e02b205",
+            "department": "Editing",
+            "gender": 0,
+            "id": 1018965,
+            "job": "Editor",
+            "name": "Lisa Lassek",
+            "profile_path": "/eS72rb8ccHwtgTT4JcmWyycc4NY.jpg"
+        },
+        {
+            "credit_id": "52fe4495c3a368484e02b211",
+            "department": "Costume & Make-Up",
+            "gender": 1,
+            "id": 13009,
+            "job": "Costume Design",
+            "name": "Alexandra Byrne",
+            "profile_path": "/zQbgltu0mgT3HCmfi7DRHrhvEhL.jpg"
+        },
+        {
+            "credit_id": "52fe4495c3a368484e02b21d",
+            "department": "Writing",
+            "gender": 2,
+            "id": 18866,
+            "job": "Characters",
+            "name": "Jack Kirby",
+            "profile_path": "/xLVSa7mX1BCyVoKD2wyRGEQXj8M.jpg"
+        },
+        {
+            "credit_id": "59ae526ac3a3682c2204e2da",
+            "department": "Writing",
+            "gender": 2,
+            "id": 7624,
+            "job": "Comic Book",
+            "name": "Stan Lee",
+            "profile_path": "/dTr2gJPL7jELKVkcjtoNx80uVKR.jpg"
+        },
+        {
+            "credit_id": "59ae532f925141072304f687",
+            "department": "Production",
+            "gender": 2,
+            "id": 7624,
+            "job": "Executive Producer",
+            "name": "Stan Lee",
+            "profile_path": "/dTr2gJPL7jELKVkcjtoNx80uVKR.jpg"
+        },
+        {
+            "credit_id": "539c4d74c3a36810da002247",
+            "department": "Art",
+            "gender": 2,
+            "id": 9546,
+            "job": "Production Design",
+            "name": "James Chinlund",
+            "profile_path": null
+        },
+        {
+            "credit_id": "539c4d08c3a36810c100214e",
+            "department": "Production",
+            "gender": 1,
+            "id": 7232,
+            "job": "Casting",
+            "name": "Sarah Finn",
+            "profile_path": null
+        },
+        {
+            "credit_id": "539c4d1dc3a368653d001b31",
+            "department": "Production",
+            "gender": 1,
+            "id": 20540,
+            "job": "Casting",
+            "name": "Randi Hiller",
+            "profile_path": null
+        },
+        {
+            "credit_id": "539c4d88c3a36810b5002066",
+            "department": "Art",
+            "gender": 0,
+            "id": 1330582,
+            "job": "Art Direction",
+            "name": "Benjamin Edelberg",
+            "profile_path": null
+        },
+        {
+            "credit_id": "539c4d9cc3a36810e300208a",
+            "department": "Art",
+            "gender": 1,
+            "id": 1322017,
+            "job": "Art Direction",
+            "name": "Jann Engel",
+            "profile_path": null
+        },
+        {
+            "credit_id": "539c4daec3a368653d001b53",
+            "department": "Art",
+            "gender": 0,
+            "id": 1172441,
+            "job": "Art Direction",
+            "name": "Gregory S. Hooper",
+            "profile_path": null
+        },
+        {
+            "credit_id": "539c4dc0c3a36810c100216b",
+            "department": "Art",
+            "gender": 2,
+            "id": 1330583,
+            "job": "Art Direction",
+            "name": "William O. Hunter",
+            "profile_path": null
+        },
+        {
+            "credit_id": "539c4e08c3a36810e3002096",
+            "department": "Art",
+            "gender": 0,
+            "id": 20786,
+            "job": "Art Direction",
+            "name": "Randy Moore",
+            "profile_path": null
+        },
+        {
+            "credit_id": "539c4e35c3a36810c9002171",
+            "department": "Art",
+            "gender": 2,
+            "id": 6055,
+            "job": "Set Decoration",
+            "name": "Victor J. Zolfo",
+            "profile_path": null
+        },
+        {
+            "credit_id": "539c4e66c3a36810b5002075",
+            "department": "Costume & Make-Up",
+            "gender": 0,
+            "id": 1329417,
+            "job": "Makeup Department Head",
+            "name": "John Blake",
+            "profile_path": null
+        },
+        {
+            "credit_id": "539c4eb90e0a267a5a002b5d",
+            "department": "Costume & Make-Up",
+            "gender": 0,
+            "id": 1330584,
+            "job": "Costume Supervisor",
+            "name": "Rhonney Greene",
+            "profile_path": null
+        },
+        {
+            "credit_id": "539c4ece0e0a267a56002c14",
+            "department": "Costume & Make-Up",
+            "gender": 0,
+            "id": 1330585,
+            "job": "Costume Supervisor",
+            "name": "Angelique Paull",
+            "profile_path": null
+        },
+        {
+            "credit_id": "539c4eea0e0a267a4c002a91",
+            "department": "Costume & Make-Up",
+            "gender": 0,
+            "id": 1319134,
+            "job": "Costume Supervisor",
+            "name": "Suzi Turnbull",
+            "profile_path": null
+        },
+        {
+            "credit_id": "570b898e9251413a0e0006c2",
+            "department": "Art",
+            "gender": 2,
+            "id": 8285,
+            "job": "Supervising Art Director",
+            "name": "Richard L. Johnson",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5495a319c3a3686ae90044bd",
+            "department": "Costume & Make-Up",
+            "gender": 0,
+            "id": 12619,
+            "job": "Wigmaker",
+            "name": "Erwin H. Kupitz",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5495a3459251416e1e003fad",
+            "department": "Costume & Make-Up",
+            "gender": 0,
+            "id": 1401821,
+            "job": "Hairstylist",
+            "name": "Tijen Osman",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5495a3729251413f75002ad7",
+            "department": "Production",
+            "gender": 0,
+            "id": 1401823,
+            "job": "Production Supervisor",
+            "name": "Don J. Hug",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5495a3909251412c4e002b25",
+            "department": "Production",
+            "gender": 0,
+            "id": 1401824,
+            "job": "Production Supervisor",
+            "name": "Nadia Paine",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5495a3abc3a3686af3003fae",
+            "department": "Art",
+            "gender": 0,
+            "id": 1401825,
+            "job": "Art Department Coordinator",
+            "name": "Marcella Brennan",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5495a3d39251412c4e002b30",
+            "department": "Art",
+            "gender": 0,
+            "id": 1357055,
+            "job": "Art Department Coordinator",
+            "name": "Candice Muriedas",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5495a4089251413af7002a30",
+            "department": "Art",
+            "gender": 0,
+            "id": 1389131,
+            "job": "Construction Coordinator",
+            "name": "John Hoskins",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5495a4339251413f75002af0",
+            "department": "Art",
+            "gender": 0,
+            "id": 1389128,
+            "job": "Assistant Art Director",
+            "name": "Nick S. Cross",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5495a48e92514130fc002f02",
+            "department": "Art",
+            "gender": 0,
+            "id": 1357047,
+            "job": "Set Designer",
+            "name": "Aric Cheng",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5495a4a19251412c4e002b44",
+            "department": "Art",
+            "gender": 0,
+            "id": 1360093,
+            "job": "Set Designer",
+            "name": "Tim Croshaw",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5495a4bb9251416e1e003fde",
+            "department": "Art",
+            "gender": 0,
+            "id": 41890,
+            "job": "Set Designer",
+            "name": "Marisa Frantz",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5495a4d192514132ed002a96",
+            "department": "Art",
+            "gender": 0,
+            "id": 1068055,
+            "job": "Set Designer",
+            "name": "Jim Hewitt",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5495a4f79251412c4e002b51",
+            "department": "Art",
+            "gender": 0,
+            "id": 1386908,
+            "job": "Set Designer",
+            "name": "Jeff Markwith",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5495a521c3a3686ae1004793",
+            "department": "Art",
+            "gender": 0,
+            "id": 1336191,
+            "job": "Set Designer",
+            "name": "Sam Page",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5495ff3792514130fc003723",
+            "department": "Art",
+            "gender": 0,
+            "id": 1378220,
+            "job": "Leadman",
+            "name": "Jason Bedig",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5495ff699251416e1e004793",
+            "department": "Art",
+            "gender": 0,
+            "id": 1401884,
+            "job": "Sculptor",
+            "name": "Yann Denoual",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5495ff90c3a3686ae100510a",
+            "department": "Art",
+            "gender": 0,
+            "id": 1401885,
+            "job": "Sculptor",
+            "name": "Clark Kelly",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5495ffe39251413f75003304",
+            "department": "Crew",
+            "gender": 0,
+            "id": 1335066,
+            "job": "Property Master",
+            "name": "Andrew Petrotta",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496000f9251417a810028d5",
+            "department": "Art",
+            "gender": 0,
+            "id": 1401886,
+            "job": "Leadman",
+            "name": "John Millard",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496005e9251412c4e003310",
+            "department": "Art",
+            "gender": 0,
+            "id": 1401887,
+            "job": "Sculptor",
+            "name": "Duncan Crawford",
+            "profile_path": null
+        },
+        {
+            "credit_id": "549600c39251416e1e0047b1",
+            "department": "Art",
+            "gender": 0,
+            "id": 1347734,
+            "job": "Assistant Art Director",
+            "name": "Stephen Morahan",
+            "profile_path": null
+        },
+        {
+            "credit_id": "549600fac3a3686ae1005125",
+            "department": "Crew",
+            "gender": 0,
+            "id": 1400488,
+            "job": "Scenic Artist",
+            "name": "Victor Morales",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496015cc3a3680fc6002fdd",
+            "department": "Sound",
+            "gender": 0,
+            "id": 1339446,
+            "job": "Supervising Sound Editor",
+            "name": "Frank E. Eulner",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496018d9251416e1e0047c3",
+            "department": "Sound",
+            "gender": 0,
+            "id": 900,
+            "job": "Sound Designer",
+            "name": "Christopher Boyes",
+            "profile_path": "/qPYrAJif2AYqgUckgE9bEkjrdVw.jpg"
+        },
+        {
+            "credit_id": "549601ad9251412c4e00333b",
+            "department": "Sound",
+            "gender": 0,
+            "id": 900,
+            "job": "Sound Re-Recording Mixer",
+            "name": "Christopher Boyes",
+            "profile_path": "/qPYrAJif2AYqgUckgE9bEkjrdVw.jpg"
+        },
+        {
+            "credit_id": "549601cbc3a3686ae9004daf",
+            "department": "Sound",
+            "gender": 1,
+            "id": 1327030,
+            "job": "Sound Re-Recording Mixer",
+            "name": "Lora Hirschberg",
+            "profile_path": "/gL4qn7THQn33BgSN2H4jRfuJJbU.jpg"
+        },
+        {
+            "credit_id": "549601f1c3a3686af300478e",
+            "department": "Editing",
+            "gender": 0,
+            "id": 1376901,
+            "job": "Dialogue Editor",
+            "name": "Marshall Winn",
+            "profile_path": null
+        },
+        {
+            "credit_id": "549602089251413f7500333c",
+            "department": "Editing",
+            "gender": 0,
+            "id": 1339448,
+            "job": "Dialogue Editor",
+            "name": "Matthew Hartman",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496022e9251413af7003237",
+            "department": "Sound",
+            "gender": 1,
+            "id": 15893,
+            "job": "Sound Effects Editor",
+            "name": "Teresa Eckton",
+            "profile_path": null
+        },
+        {
+            "credit_id": "549602549251413af700323d",
+            "department": "Sound",
+            "gender": 0,
+            "id": 1352421,
+            "job": "Foley",
+            "name": "Sean England",
+            "profile_path": null
+        },
+        {
+            "credit_id": "549602ce9251413af700324d",
+            "department": "Visual Effects",
+            "gender": 0,
+            "id": 1401890,
+            "job": "Visual Effects Producer",
+            "name": "Jeff Atherton",
+            "profile_path": null
+        },
+        {
+            "credit_id": "549603019251413af7003253",
+            "department": "Crew",
+            "gender": 0,
+            "id": 1401891,
+            "job": "Visual Effects Editor",
+            "name": "Jeremy Bradley",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496031e9251413f75003356",
+            "department": "Visual Effects",
+            "gender": 0,
+            "id": 1384368,
+            "job": "Visual Effects Producer",
+            "name": "Daniel Brimer",
+            "profile_path": null
+        },
+        {
+            "credit_id": "549603489251413af700325d",
+            "department": "Visual Effects",
+            "gender": 0,
+            "id": 1401892,
+            "job": "Visual Effects Producer",
+            "name": "Mihaela Chifor",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496037692514130fc003779",
+            "department": "Visual Effects",
+            "gender": 0,
+            "id": 1395320,
+            "job": "Visual Effects Producer",
+            "name": "Sean Cushing",
+            "profile_path": null
+        },
+        {
+            "credit_id": "549603a1c3a3681153002fc2",
+            "department": "Crew",
+            "gender": 0,
+            "id": 1401893,
+            "job": "Visual Effects Editor",
+            "name": "Lorelei David",
+            "profile_path": null
+        },
+        {
+            "credit_id": "549603c0c3a3680ff50036b6",
+            "department": "Visual Effects",
+            "gender": 0,
+            "id": 113123,
+            "job": "Visual Effects Producer",
+            "name": "Anouk Deveault-Moreau",
+            "profile_path": null
+        },
+        {
+            "credit_id": "54960422c3a3686ae9004dff",
+            "department": "Visual Effects",
+            "gender": 0,
+            "id": 1401894,
+            "job": "Visual Effects Producer",
+            "name": "John L. Jack",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496047692514130fc00379c",
+            "department": "Visual Effects",
+            "gender": 0,
+            "id": 1401895,
+            "job": "Visual Effects Producer",
+            "name": "Kathleen Lynch",
+            "profile_path": null
+        },
+        {
+            "credit_id": "549604a29251417a81002949",
+            "department": "Crew",
+            "gender": 0,
+            "id": 1394753,
+            "job": "Visual Effects Editor",
+            "name": "George McCarthy",
+            "profile_path": null
+        },
+        {
+            "credit_id": "549604b99251413af700327e",
+            "department": "Crew",
+            "gender": 0,
+            "id": 1347720,
+            "job": "Visual Effects Art Director",
+            "name": "Aaron McBride",
+            "profile_path": null
+        },
+        {
+            "credit_id": "549604db9251412c4e00338d",
+            "department": "Crew",
+            "gender": 0,
+            "id": 1401896,
+            "job": "Visual Effects Editor",
+            "name": "James Meikle",
+            "profile_path": null
+        },
+        {
+            "credit_id": "549604fe9251413af7003282",
+            "department": "Visual Effects",
+            "gender": 2,
+            "id": 1368873,
+            "job": "Visual Effects Producer",
+            "name": "Michel Mielke",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496052d9251412c4e003396",
+            "department": "Visual Effects",
+            "gender": 0,
+            "id": 1401793,
+            "job": "Visual Effects Producer",
+            "name": "Cyndi Ochs",
+            "profile_path": null
+        },
+        {
+            "credit_id": "54960547c3a3680ff50036e0",
+            "department": "Visual Effects",
+            "gender": 0,
+            "id": 1368875,
+            "job": "Visual Effects Producer",
+            "name": "Julie Orosz",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496057a9251416e2b004d85",
+            "department": "Visual Effects",
+            "gender": 0,
+            "id": 1388871,
+            "job": "Visual Effects Producer",
+            "name": "Susan Pickett",
+            "profile_path": null
+        },
+        {
+            "credit_id": "549605a0c3a3680fc6003032",
+            "department": "Crew",
+            "gender": 0,
+            "id": 1401897,
+            "job": "Visual Effects Editor",
+            "name": "Danny Rafic",
+            "profile_path": null
+        },
+        {
+            "credit_id": "549605e39251412c4e0033a7",
+            "department": "Crew",
+            "gender": 0,
+            "id": 1401898,
+            "job": "Visual Effects Editor",
+            "name": "Cameron Sharp",
+            "profile_path": null
+        },
+        {
+            "credit_id": "54960630c3a3681153002ff7",
+            "department": "Visual Effects",
+            "gender": 0,
+            "id": 1401899,
+            "job": "Visual Effects Producer",
+            "name": "Georg Wieland",
+            "profile_path": null
+        },
+        {
+            "credit_id": "549693309251416e1e005633",
+            "department": "Visual Effects",
+            "gender": 0,
+            "id": 1379986,
+            "job": "Visual Effects Supervisor",
+            "name": "Alessandro Cioffi",
+            "profile_path": null
+        },
+        {
+            "credit_id": "549693809251413f75004179",
+            "department": "Visual Effects",
+            "gender": 0,
+            "id": 1401965,
+            "job": "Visual Effects Supervisor",
+            "name": "Bryan Grill",
+            "profile_path": null
+        },
+        {
+            "credit_id": "549693a99251417315000e69",
+            "department": "Visual Effects",
+            "gender": 0,
+            "id": 1401966,
+            "job": "Visual Effects Supervisor",
+            "name": "Venti Hristova",
+            "profile_path": null
+        },
+        {
+            "credit_id": "549693dd9251417315000e6f",
+            "department": "Crew",
+            "gender": 0,
+            "id": 1401967,
+            "job": "Visual Effects Art Director",
+            "name": "Alex Jaeger",
+            "profile_path": null
+        },
+        {
+            "credit_id": "54969423c3a3680fc6003e11",
+            "department": "Visual Effects",
+            "gender": 2,
+            "id": 1401722,
+            "job": "Visual Effects Supervisor",
+            "name": "Matt McDonald",
+            "profile_path": null
+        },
+        {
+            "credit_id": "549694559251416e2b005db9",
+            "department": "Visual Effects",
+            "gender": 0,
+            "id": 1400560,
+            "job": "Visual Effects Supervisor",
+            "name": "Erik Nash",
+            "profile_path": null
+        },
+        {
+            "credit_id": "549694889251413f7500418a",
+            "department": "Visual Effects",
+            "gender": 0,
+            "id": 1394961,
+            "job": "Visual Effects Supervisor",
+            "name": "Daniel P. Rosen",
+            "profile_path": null
+        },
+        {
+            "credit_id": "549694b792514132ed00413d",
+            "department": "Visual Effects",
+            "gender": 0,
+            "id": 1401968,
+            "job": "Visual Effects Supervisor",
+            "name": "Janek Sirrs",
+            "profile_path": null
+        },
+        {
+            "credit_id": "549694d5c3a3686ae1006274",
+            "department": "Visual Effects",
+            "gender": 2,
+            "id": 6037,
+            "job": "Visual Effects Supervisor",
+            "name": "Colin Strause",
+            "profile_path": "/r5JVeKjHtc394izdBJs9T0hCH7L.jpg"
+        },
+        {
+            "credit_id": "549694ec92514132ed004142",
+            "department": "Visual Effects",
+            "gender": 2,
+            "id": 6038,
+            "job": "Visual Effects Supervisor",
+            "name": "Greg Strause",
+            "profile_path": "/xcEcDFHoTkIuOkLeWRuX3ksJmy1.jpg"
+        },
+        {
+            "credit_id": "549695019251416e2b005dc8",
+            "department": "Visual Effects",
+            "gender": 0,
+            "id": 1401970,
+            "job": "Visual Effects Supervisor",
+            "name": "Nigel Sumner",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496956cc3a36831b800370b",
+            "department": "Visual Effects",
+            "gender": 0,
+            "id": 1401971,
+            "job": "Visual Effects Supervisor",
+            "name": "Jeff White",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496958ec3a3686ae1006284",
+            "department": "Visual Effects",
+            "gender": 0,
+            "id": 1401803,
+            "job": "Visual Effects Supervisor",
+            "name": "Guy Williams",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a11a9251417a810039a9",
+            "department": "Crew",
+            "gender": 0,
+            "id": 14771,
+            "job": "Stunt Coordinator",
+            "name": "R.A. Rondell",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a155c3a3686ae10063ca",
+            "department": "Camera",
+            "gender": 0,
+            "id": 1399071,
+            "job": "Camera Operator",
+            "name": "Hans Bjerno",
+            "profile_path": "/tzeE3ATzHWyEQH32GYeGuSgr1xz.jpg"
+        },
+        {
+            "credit_id": "5496a17ec3a3681153003dd8",
+            "department": "Camera",
+            "gender": 2,
+            "id": 1395463,
+            "job": "Camera Operator",
+            "name": "Mitch Dubin",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a1bfc3a36831b800384d",
+            "department": "Camera",
+            "gender": 0,
+            "id": 1401987,
+            "job": "Camera Operator",
+            "name": "Christopher A. Schenck",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a1ecc3a3686ae3005e89",
+            "department": "Camera",
+            "gender": 0,
+            "id": 1400082,
+            "job": "Still Photographer",
+            "name": "Zade Rosenthal",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a228c3a3680fc6003f63",
+            "department": "Lighting",
+            "gender": 0,
+            "id": 1401988,
+            "job": "Lighting Technician",
+            "name": "Chris Napolitano",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a23cc3a3686ae3005e8e",
+            "department": "Camera",
+            "gender": 2,
+            "id": 1401989,
+            "job": "Camera Operator",
+            "name": "John S. Moyer",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a280c3a36831b800385d",
+            "department": "Crew",
+            "gender": 0,
+            "id": 1401990,
+            "job": "Video Assist Operator",
+            "name": "Kevin McKenna",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a29d9251416e2b005f17",
+            "department": "Lighting",
+            "gender": 0,
+            "id": 1401991,
+            "job": "Lighting Technician",
+            "name": "Jason Linebaugh",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a2ba92514132ed004267",
+            "department": "Crew",
+            "gender": 0,
+            "id": 1401992,
+            "job": "Video Assist Operator",
+            "name": "Jimi Johnson",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a2d4c3a3686ae3005e9a",
+            "department": "Lighting",
+            "gender": 0,
+            "id": 1401993,
+            "job": "Lighting Technician",
+            "name": "Sherman Jackson",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a31ac3a3686af3005687",
+            "department": "Camera",
+            "gender": 0,
+            "id": 1401994,
+            "job": "Additional Photography",
+            "name": "Michael Burgess",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a334c3a3686af300568c",
+            "department": "Camera",
+            "gender": 2,
+            "id": 10832,
+            "job": "Additional Photography",
+            "name": "Gabriel Beristain",
+            "profile_path": "/zpy2AF6fmOFgZTKcLV1Wa3raQ9N.jpg"
+        },
+        {
+            "credit_id": "5496a3559251417a810039d2",
+            "department": "Lighting",
+            "gender": 0,
+            "id": 1401995,
+            "job": "Lighting Technician",
+            "name": "Russell Ayer",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a36e92514130fc0047bd",
+            "department": "Lighting",
+            "gender": 0,
+            "id": 1401996,
+            "job": "Lighting Technician",
+            "name": "David M. Adams",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a3a79251417a810039dc",
+            "department": "Lighting",
+            "gender": 0,
+            "id": 1401997,
+            "job": "Gaffer",
+            "name": "Bill O'Leary",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a3edc3a3681153003e13",
+            "department": "Visual Effects",
+            "gender": 0,
+            "id": 1401998,
+            "job": "Animation Director",
+            "name": "Tom Meade",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a4239251416e1e005781",
+            "department": "Costume & Make-Up",
+            "gender": 0,
+            "id": 1330567,
+            "job": "Set Costumer",
+            "name": "Anthony Almaraz",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a43a9251417a810039f2",
+            "department": "Costume & Make-Up",
+            "gender": 0,
+            "id": 1401999,
+            "job": "Set Costumer",
+            "name": "Paul John Carli",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a4569251416e2b005f45",
+            "department": "Costume & Make-Up",
+            "gender": 0,
+            "id": 1402000,
+            "job": "Set Costumer",
+            "name": "Scott T. Coppock",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a46b92514132ed00428e",
+            "department": "Costume & Make-Up",
+            "gender": 0,
+            "id": 1402001,
+            "job": "Set Costumer",
+            "name": "Emily Egge",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a48392514132ed004294",
+            "department": "Costume & Make-Up",
+            "gender": 0,
+            "id": 1395030,
+            "job": "Set Costumer",
+            "name": "Alison Evans",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a4a9c3a3680ff50047fc",
+            "department": "Costume & Make-Up",
+            "gender": 0,
+            "id": 1402002,
+            "job": "Set Costumer",
+            "name": "Askia Won-Ling Jacob",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a4c19251413f750042cf",
+            "department": "Costume & Make-Up",
+            "gender": 0,
+            "id": 1402003,
+            "job": "Set Costumer",
+            "name": "Carol McLennan",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a4da9251413f750042d5",
+            "department": "Costume & Make-Up",
+            "gender": 0,
+            "id": 1392143,
+            "job": "Set Costumer",
+            "name": "Bob Moore Jr.",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a4f3c3a3686ae1006418",
+            "department": "Costume & Make-Up",
+            "gender": 0,
+            "id": 1402004,
+            "job": "Set Costumer",
+            "name": "Aura Sperling Pierce",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a50ec3a3686ae3005ed5",
+            "department": "Costume & Make-Up",
+            "gender": 0,
+            "id": 1339457,
+            "job": "Set Costumer",
+            "name": "Claire Sandrin",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a524c3a3686ae3005ed8",
+            "department": "Costume & Make-Up",
+            "gender": 0,
+            "id": 1402005,
+            "job": "Set Costumer",
+            "name": "Jesse Trevino",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a552c3a3686ae9005f6d",
+            "department": "Sound",
+            "gender": 0,
+            "id": 1402006,
+            "job": "Music Editor",
+            "name": "Steve Durkee",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a56fc3a3686ae1006429",
+            "department": "Crew",
+            "gender": 0,
+            "id": 95844,
+            "job": "Transportation Coordinator",
+            "name": "Jim Chesney",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a5ad9251417a81003a23",
+            "department": "Crew",
+            "gender": 0,
+            "id": 1402007,
+            "job": "Translator",
+            "name": "Tatiana Chapman",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a5d2c3a3686af30056b9",
+            "department": "Crew",
+            "gender": 1,
+            "id": 1402008,
+            "job": "Dialect Coach",
+            "name": "Kathleen S. Dunn",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a5fdc3a3681153003e3b",
+            "department": "Crew",
+            "gender": 0,
+            "id": 1402009,
+            "job": "Studio Teachers",
+            "name": "Allegro Hopkins",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a673c3a3686ae9005f85",
+            "department": "Crew",
+            "gender": 0,
+            "id": 1402010,
+            "job": "Studio Teachers",
+            "name": "Kristy Viera",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a6b59251417162000f61",
+            "department": "Production",
+            "gender": 0,
+            "id": 1392947,
+            "job": "Location Manager",
+            "name": "Aaron Spaulding",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a6d1c3a3686af30056d4",
+            "department": "Production",
+            "gender": 0,
+            "id": 1402011,
+            "job": "Location Manager",
+            "name": "David Rumble",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a6f5c3a3680ff5004817",
+            "department": "Production",
+            "gender": 0,
+            "id": 1399893,
+            "job": "Location Manager",
+            "name": "Tom Moisides",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a70dc3a3681153003e4b",
+            "department": "Production",
+            "gender": 0,
+            "id": 1402012,
+            "job": "Publicist",
+            "name": "Ruben Malaret",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a7269251417315000ffe",
+            "department": "Production",
+            "gender": 0,
+            "id": 1402013,
+            "job": "Location Manager",
+            "name": "Scott Allen Logan",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5496a73ec3a3680fc6003fc2",
+            "department": "Crew",
+            "gender": 0,
+            "id": 1402014,
+            "job": "Unit Publicist",
+            "name": "Ken Lingad",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5518ccfc92514115000033a7",
+            "department": "Writing",
+            "gender": 0,
+            "id": 1447326,
+            "job": "Storyboard",
+            "name": "Jane Wu",
+            "profile_path": "/Ypw5qKAimytqBFYfwSA5mbSHyD.jpg"
+        },
+        {
+            "credit_id": "5534071a92514110140041b1",
+            "department": "Crew",
+            "gender": 0,
+            "id": 1456696,
+            "job": "Compositors",
+            "name": "Brian N. Bentley",
+            "profile_path": null
+        },
+        {
+            "credit_id": "553b29799251412c270007fb",
+            "department": "Visual Effects",
+            "gender": 0,
+            "id": 1457930,
+            "job": "Visual Effects",
+            "name": "James Baker",
+            "profile_path": null
+        },
+        {
+            "credit_id": "553c29eac3a368784500b344",
+            "department": "Crew",
+            "gender": 2,
+            "id": 1412756,
+            "job": "Visual Effects Editor",
+            "name": "Chris O'Connell",
+            "profile_path": null
+        },
+        {
+            "credit_id": "553d5a32c3a368066d001daf",
+            "department": "Visual Effects",
+            "gender": 2,
+            "id": 1450362,
+            "job": "Visual Effects",
+            "name": "Scott F. Johnston",
+            "profile_path": null
+        },
+        {
+            "credit_id": "553ea6c59251411f40000066",
+            "department": "Crew",
+            "gender": 0,
+            "id": 1457935,
+            "job": "Compositors",
+            "name": "Michael Queen",
+            "profile_path": null
+        },
+        {
+            "credit_id": "55495951c3a36841b20008a6",
+            "department": "Visual Effects",
+            "gender": 0,
+            "id": 1459736,
+            "job": "Animation",
+            "name": "Travis Tohill",
+            "profile_path": null
+        },
+        {
+            "credit_id": "55519b10c3a368426f003468",
+            "department": "Visual Effects",
+            "gender": 0,
+            "id": 1463568,
+            "job": "Visual Effects",
+            "name": "Mike Marcuzzi",
+            "profile_path": null
+        },
+        {
+            "credit_id": "56472df0c3a368261a0031bb",
+            "department": "Camera",
+            "gender": 0,
+            "id": 3285,
+            "job": "Director of Photography",
+            "name": "Seamus McGarvey",
+            "profile_path": "/yXEsxEMHlMDemBy8JrHZFAmd3uD.jpg"
+        },
+        {
+            "credit_id": "568706659251414ecb011f61",
+            "department": "Directing",
+            "gender": 1,
+            "id": 1339468,
+            "job": "Script Supervisor",
+            "name": "Trudy Ramirez",
+            "profile_path": null
+        },
+        {
+            "credit_id": "56870683c3a3685f8900b82b",
+            "department": "Sound",
+            "gender": 2,
+            "id": 24192,
+            "job": "Music Supervisor",
+            "name": "Dave Jordan",
+            "profile_path": null
+        },
+        {
+            "credit_id": "571260d8c3a368663600348e",
+            "department": "Crew",
+            "gender": 0,
+            "id": 1407019,
+            "job": "Visual Effects Editor",
+            "name": "Mark Edward Wright",
+            "profile_path": null
+        },
+        {
+            "credit_id": "5abf9a389251416027029981",
+            "department": "Visual Effects",
+            "gender": 2,
+            "id": 1855918,
+            "job": "Digital Compositors",
+            "name": "David M. Scott",
+            "profile_path": null
+        }
+    ]
+}
+
+
+2)get genres ids
+
+
+https://api.themoviedb.org/3/genre/movie/list?api_key=3f0a291b35d827d21951f5dec2a2505c&language=en-US
+
+
+{
+    "genres": [
+        {
+            "id": 28,
+            "name": "Action"
+        },
+        {
+            "id": 12,
+            "name": "Adventure"
+        },
+        {
+            "id": 16,
+            "name": "Animation"
+        },
+        {
+            "id": 35,
+            "name": "Comedy"
+        },
+        {
+            "id": 80,
+            "name": "Crime"
+        },
+        {
+            "id": 99,
+            "name": "Documentary"
+        },
+        {
+            "id": 18,
+            "name": "Drama"
+        },
+        {
+            "id": 10751,
+            "name": "Family"
+        },
+        {
+            "id": 14,
+            "name": "Fantasy"
+        },
+        {
+            "id": 36,
+            "name": "History"
+        },
+        {
+            "id": 27,
+            "name": "Horror"
+        },
+        {
+            "id": 10402,
+            "name": "Music"
+        },
+        {
+            "id": 9648,
+            "name": "Mystery"
+        },
+        {
+            "id": 10749,
+            "name": "Romance"
+        },
+        {
+            "id": 878,
+            "name": "Science Fiction"
+        },
+        {
+            "id": 10770,
+            "name": "TV Movie"
+        },
+        {
+            "id": 53,
+            "name": "Thriller"
+        },
+        {
+            "id": 10752,
+            "name": "War"
+        },
+        {
+            "id": 37,
+            "name": "Western"
+        }
+    ]
+}
+
+
+3)getting movie with genre id
+
+https://api.themoviedb.org/3/genre/28/movies?api_key=3f0a291b35d827d21951f5dec2a2505c&language=en-US&include_adult=false&sort_by=created_at.asc
+
+
+{
+    "id": 28,
+    "page": 1,
+    "results": [
+        {
+            "adult": false,
+            "backdrop_path": "/bOGkgRGdhrBYJSLpXaxhXVstddV.jpg",
+            "genre_ids": [
+                12,
+                878,
+                14,
+                28
+            ],
+            "id": 299536,
+            "original_language": "en",
+            "original_title": "Avengers: Infinity War",
+            "overview": "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
+            "release_date": "2018-04-25",
+            "poster_path": "/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+            "popularity": 725.420399,
+            "title": "Avengers: Infinity War",
+            "video": false,
+            "vote_average": 8.699999999999999,
+            "vote_count": 2048
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/AlFqBwJnokrp9zWTXOUv7uhkaeq.jpg",
+            "genre_ids": [
+                28,
+                12,
+                14,
+                878
+            ],
+            "id": 284054,
+            "original_language": "en",
+            "original_title": "Black Panther",
+            "overview": "King T'Challa returns home from America to the reclusive, technologically advanced African nation of Wakanda to serve as his country's new leader. However, T'Challa soon finds that he is challenged for the throne by factions within his own country as well as without.  Using powers reserved to Wakandan kings, T'Challa assumes the Black Panther mantel to join with girlfriend Nakia, the queen-mother, his princess-kid sister,  members of the Dora Milaje (the Wakandan 'special forces') and an American secret agent, to prevent Wakanda from being dragged into a world war.",
+            "release_date": "2018-02-13",
+            "poster_path": "/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
+            "popularity": 259.218769,
+            "title": "Black Panther",
+            "video": false,
+            "vote_average": 7.3,
+            "vote_count": 4569
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/kaIfm5ryEOwYg8mLbq8HkPuM1Fo.jpg",
+            "genre_ids": [
+                28,
+                12,
+                14
+            ],
+            "id": 284053,
+            "original_language": "en",
+            "original_title": "Thor: Ragnarok",
+            "overview": "Thor is imprisoned on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the prophecy of destruction to his homeworld and the end of Asgardian civilization, at the hands of an all-powerful new threat, the ruthless Hela.",
+            "release_date": "2017-10-25",
+            "poster_path": "/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg",
+            "popularity": 223.269212,
+            "title": "Thor: Ragnarok",
+            "video": false,
+            "vote_average": 7.4,
+            "vote_count": 5925
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/wrqUiMXttHE4UBFMhLHlN601MZh.jpg",
+            "genre_ids": [
+                28,
+                12,
+                878
+            ],
+            "id": 427641,
+            "original_language": "en",
+            "original_title": "Rampage",
+            "overview": "Primatologist Davis Okoye shares an unshakable bond with George, the extraordinarily intelligent, silverback gorilla who has been in his care since birth.  But a rogue genetic experiment gone awry mutates this gentle ape into a raging creature of enormous size.  To make matters worse, it’s soon discovered there are other similarly altered animals.  As these newly created alpha predators tear across North America, destroying everything in their path, Okoye teams with a discredited genetic engineer to secure an antidote, fighting his way through an ever-changing battlefield, not only to halt a global catastrophe but to save the fearsome creature that was once his friend.",
+            "release_date": "2018-04-12",
+            "poster_path": "/30oXQKwibh0uANGMs0Sytw3uN22.jpg",
+            "popularity": 216.030997,
+            "title": "Rampage",
+            "video": false,
+            "vote_average": 5.9,
+            "vote_count": 377
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/bHarw8xrmQeqf3t8HpuMY7zoK4x.jpg",
+            "genre_ids": [
+                28,
+                878,
+                12
+            ],
+            "id": 118340,
+            "original_language": "en",
+            "original_title": "Guardians of the Galaxy",
+            "overview": "Light years from Earth, 26 years after being abducted, Peter Quill finds himself the prime target of a manhunt after discovering an orb wanted by Ronan the Accuser.",
+            "release_date": "2014-07-30",
+            "poster_path": "/y31QB9kn3XSudA15tV7UWQ9XLuW.jpg",
+            "popularity": 180.252596,
+            "title": "Guardians of the Galaxy",
+            "video": false,
+            "vote_average": 7.9,
+            "vote_count": 12792
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/hbn46fQaRmlpBuUrEiFqv0GDL6Y.jpg",
+            "genre_ids": [
+                878,
+                28,
+                12
+            ],
+            "id": 24428,
+            "original_language": "en",
+            "original_title": "The Avengers",
+            "overview": "When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!",
+            "release_date": "2012-04-25",
+            "poster_path": "/cezWGskPY5x7GaglTTRN4Fugfb8.jpg",
+            "popularity": 162.668631,
+            "title": "The Avengers",
+            "video": false,
+            "vote_average": 7.5,
+            "vote_count": 14414
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/lkOZcsXcOLZYeJ2YxJd3vSldvU4.jpg",
+            "genre_ids": [
+                28,
+                9648,
+                878,
+                53
+            ],
+            "id": 198663,
+            "original_language": "en",
+            "original_title": "The Maze Runner",
+            "overview": "Set in a post-apocalyptic world, young Thomas is deposited in a community of boys after his memory is erased, soon learning they're all trapped in a maze that will require him to join forces with fellow “runners” for a shot at escape.",
+            "release_date": "2014-09-10",
+            "poster_path": "/coss7RgL0NH6g4fC2s5atvf3dFO.jpg",
+            "popularity": 138.751358,
+            "title": "The Maze Runner",
+            "video": false,
+            "vote_average": 7,
+            "vote_count": 7760
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/rFtsE7Lhlc2jRWF7SRAU0fvrveQ.jpg",
+            "genre_ids": [
+                28,
+                12,
+                878
+            ],
+            "id": 99861,
+            "original_language": "en",
+            "original_title": "Avengers: Age of Ultron",
+            "overview": "When Tony Stark tries to jumpstart a dormant peacekeeping program, things go awry and Earth’s Mightiest Heroes are put to the ultimate test as the fate of the planet hangs in the balance. As the villainous Ultron emerges, it is up to The Avengers to stop him from enacting his terrible plans, and soon uneasy alliances and unexpected action pave the way for an epic and unique global adventure.",
+            "release_date": "2015-04-22",
+            "poster_path": "/t90Y3G8UGQp0f0DrP60wRu9gfrH.jpg",
+            "popularity": 126.790506,
+            "title": "Avengers: Age of Ultron",
+            "video": false,
+            "vote_average": 7.3,
+            "vote_count": 9054
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/LvmmDZxkTDqp0DX7mUo621ahdX.jpg",
+            "genre_ids": [
+                12,
+                14,
+                28
+            ],
+            "id": 10195,
+            "original_language": "en",
+            "original_title": "Thor",
+            "overview": "Against his father Odin's will, The Mighty Thor - a powerful but arrogant warrior god - recklessly reignites an ancient war. Thor is cast down to Earth and forced to live among humans as punishment. Once here, Thor learns what it takes to be a true hero when the most dangerous villain of his world sends the darkest forces of Asgard to invade Earth.",
+            "release_date": "2011-04-21",
+            "poster_path": "/bIuOWTtyFPjsFDevqvF3QrD1aun.jpg",
+            "popularity": 108.925665,
+            "title": "Thor",
+            "video": false,
+            "vote_average": 6.6,
+            "vote_count": 8826
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/umC04Cozevu8nn3JTDJ1pc7PVTn.jpg",
+            "genre_ids": [
+                28,
+                53
+            ],
+            "id": 245891,
+            "original_language": "en",
+            "original_title": "John Wick",
+            "overview": "Ex-hitman John Wick comes out of retirement to track down the gangsters that took everything from him.",
+            "release_date": "2014-10-22",
+            "poster_path": "/5vHssUeVe25bMrof1HyaPyWgaP.jpg",
+            "popularity": 104.667156,
+            "title": "John Wick",
+            "video": false,
+            "vote_average": 7,
+            "vote_count": 7362
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/bvbyidkMaBls1LTaIWYY6UmYTaL.jpg",
+            "genre_ids": [
+                28,
+                9648,
+                878,
+                53,
+                12,
+                14
+            ],
+            "id": 336843,
+            "original_language": "en",
+            "original_title": "Maze Runner: The Death Cure",
+            "overview": "Thomas leads his group of escaped Gladers on their final and most dangerous mission yet. To save their friends, they must break into the legendary Last City, a WCKD-controlled labyrinth that may turn out to be the deadliest maze of all. Anyone who makes it out alive will get answers to the questions the Gladers have been asking since they first arrived in the maze.",
+            "release_date": "2018-01-17",
+            "poster_path": "/7GgZ6DGezkh3szFdvskH5XD4V0t.jpg",
+            "popularity": 104.55811,
+            "title": "Maze Runner: The Death Cure",
+            "video": false,
+            "vote_average": 7.1,
+            "vote_count": 1558
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/79X8JkGxzc1tJMi0KxUSaPLooVg.jpg",
+            "genre_ids": [
+                28,
+                878,
+                53
+            ],
+            "id": 274855,
+            "original_language": "en",
+            "original_title": "Geostorm",
+            "overview": "After an unprecedented series of natural disasters threatened the planet, the world's leaders came together to create an intricate network of satellites to control the global climate and keep everyone safe. But now, something has gone wrong: the system built to protect Earth is attacking it, and it becomes a race against the clock to uncover the real threat before a worldwide geostorm wipes out everything and everyone along with it.",
+            "release_date": "2017-10-13",
+            "poster_path": "/nrsx0jEaBgXq4PWo7SooSnYJTv.jpg",
+            "popularity": 103.572848,
+            "title": "Geostorm",
+            "video": false,
+            "vote_average": 5.7,
+            "vote_count": 1309
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/6iUNJZymJBMXXriQyFZfLAKnjO6.jpg",
+            "genre_ids": [
+                28,
+                12,
+                14
+            ],
+            "id": 297762,
+            "original_language": "en",
+            "original_title": "Wonder Woman",
+            "overview": "An Amazon princess comes to the world of Man in the grips of the First World War to confront the forces of evil and bring an end to human conflict.",
+            "release_date": "2017-05-30",
+            "poster_path": "/imekS7f1OuHyUP2LAiTEM0zBzUz.jpg",
+            "popularity": 93.20215,
+            "title": "Wonder Woman",
+            "video": false,
+            "vote_average": 7.2,
+            "vote_count": 8480
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/2SEgJ0mHJ7TSdVDbkGU061tR33K.jpg",
+            "genre_ids": [
+                18,
+                53,
+                28,
+                878
+            ],
+            "id": 347882,
+            "original_language": "en",
+            "original_title": "Sleight",
+            "overview": "A young street magician is left to take care of his little sister after his mother's passing and turns to drug dealing in the Los Angeles party scene to keep a roof over their heads. When he gets into trouble with his supplier, his sister is kidnapped and he is forced to rely on both his sleight of hand and brilliant mind to save her.",
+            "release_date": "2017-04-28",
+            "poster_path": "/wridRvGxDqGldhzAIh3IcZhHT5F.jpg",
+            "popularity": 89.99290000000001,
+            "title": "Sleight",
+            "video": false,
+            "vote_average": 5.2,
+            "vote_count": 312
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/uA8Qe2d9bKEdCFakjjdldy3P2pU.jpg",
+            "genre_ids": [
+                28,
+                12,
+                14
+            ],
+            "id": 122917,
+            "original_language": "en",
+            "original_title": "The Hobbit: The Battle of the Five Armies",
+            "overview": "Immediately after the events of The Desolation of Smaug, Bilbo and the dwarves try to defend Erebor's mountain of treasure from others who claim it: the men of the ruined Laketown and the elves of Mirkwood. Meanwhile an army of Orcs led by Azog the Defiler is marching on Erebor, fueled by the rise of the dark lord Sauron. Dwarves, elves and men must unite, and the hope for Middle-Earth falls into Bilbo's hands.",
+            "release_date": "2014-12-10",
+            "poster_path": "/9zRzFJuaj0CHIOhAkcCcFTvyu2X.jpg",
+            "popularity": 86.620057,
+            "title": "The Hobbit: The Battle of the Five Armies",
+            "video": false,
+            "vote_average": 7.2,
+            "vote_count": 6246
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/3FweBee0xZoY77uO1bhUOlQorNH.jpg",
+            "genre_ids": [
+                28,
+                12,
+                14
+            ],
+            "id": 76338,
+            "original_language": "en",
+            "original_title": "Thor: The Dark World",
+            "overview": "Thor fights to restore order across the cosmos… but an ancient race led by the vengeful Malekith returns to plunge the universe back into darkness. Faced with an enemy that even Odin and Asgard cannot withstand, Thor must embark on his most perilous and personal journey yet, one that will reunite him with Jane Foster and force him to sacrifice everything to save us all.",
+            "release_date": "2013-10-29",
+            "poster_path": "/bnX5PqAdQZRXSw3aX3DutDcdso5.jpg",
+            "popularity": 85.826745,
+            "title": "Thor: The Dark World",
+            "video": false,
+            "vote_average": 6.7,
+            "vote_count": 6717
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/o5T8rZxoWSBMYwjsUFUqTt6uMQB.jpg",
+            "genre_ids": [
+                28,
+                12,
+                14,
+                878
+            ],
+            "id": 141052,
+            "original_language": "en",
+            "original_title": "Justice League",
+            "overview": "Fuelled by his restored faith in humanity and inspired by Superman's selfless act, Bruce Wayne and Diana Prince assemble a team of metahumans consisting of Barry Allen, Arthur Curry and Victor Stone to face the catastrophic threat of Steppenwolf and the Parademons who are on the hunt for three Mother Boxes on Earth.",
+            "release_date": "2017-11-15",
+            "poster_path": "/eifGNCSDuxJeS1loAXil5bIGgvC.jpg",
+            "popularity": 76.573976,
+            "title": "Justice League",
+            "video": false,
+            "vote_average": 6.3,
+            "vote_count": 4318
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/m5O3SZvQ6EgD5XXXLPIP1wLppeW.jpg",
+            "genre_ids": [
+                12,
+                28,
+                878
+            ],
+            "id": 271110,
+            "original_language": "en",
+            "original_title": "Captain America: Civil War",
+            "overview": "Following the events of Age of Ultron, the collective governments of the world pass an act designed to regulate all superhuman activity. This polarizes opinion amongst the Avengers, causing two factions to side with Iron Man or Captain America, which causes an epic battle between former allies.",
+            "release_date": "2016-04-27",
+            "poster_path": "/kSBXou5Ac7vEqKd97wotJumyJvU.jpg",
+            "popularity": 74.330411,
+            "title": "Captain America: Civil War",
+            "video": false,
+            "vote_average": 7.2,
+            "vote_count": 9760
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/q7fXcrDPJcf6t3rzutaNwTzuKP1.jpg",
+            "genre_ids": [
+                12,
+                878,
+                28
+            ],
+            "id": 333339,
+            "original_language": "en",
+            "original_title": "Ready Player One",
+            "overview": "When the creator of a popular video game system dies, a virtual contest is created to compete for his fortune.",
+            "release_date": "2018-03-28",
+            "poster_path": "/pU1ULUq8D3iRxl1fdX2lZIzdHuI.jpg",
+            "popularity": 72.426058,
+            "title": "Ready Player One",
+            "video": false,
+            "vote_average": 7.9,
+            "vote_count": 1704
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/t7VSsAbIQS6kpO4ikuCNSiugsSy.jpg",
+            "genre_ids": [
+                878,
+                28,
+                18,
+                53
+            ],
+            "id": 119450,
+            "original_language": "en",
+            "original_title": "Dawn of the Planet of the Apes",
+            "overview": "A group of scientists in San Francisco struggle to stay alive in the aftermath of a plague that is wiping out humanity, while Caesar tries to maintain dominance over his community of intelligent apes.",
+            "release_date": "2014-06-26",
+            "poster_path": "/2EUAUIu5lHFlkj5FRryohlH6CRO.jpg",
+            "popularity": 69.943305,
+            "title": "Dawn of the Planet of the Apes",
+            "video": false,
+            "vote_average": 7.2,
+            "vote_count": 5614
+        }
+    ],
+    "total_pages": 1084,
+    "total_results": 21669
+}
+
+
+4)searching with year with high to low poplarity
+
+https://api.themoviedb.org/3/discover/movie/?api_key=3f0a291b35d827d21951f5dec2a2505c&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&year=2018
+
+
+{
+    "page": 1,
+    "total_results": 5655,
+    "total_pages": 283,
+    "results": [
+        {
+            "vote_count": 2087,
+            "id": 299536,
+            "video": false,
+            "vote_average": 8.7,
+            "title": "Avengers: Infinity War",
+            "popularity": 725.420399,
+            "poster_path": "/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+            "original_language": "en",
+            "original_title": "Avengers: Infinity War",
+            "genre_ids": [
+                12,
+                878,
+                14,
+                28
+            ],
+            "backdrop_path": "/bOGkgRGdhrBYJSLpXaxhXVstddV.jpg",
+            "adult": false,
+            "overview": "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
+            "release_date": "2018-04-25"
+        },
+        {
+            "vote_count": 1626,
+            "id": 337167,
+            "video": false,
+            "vote_average": 6,
+            "title": "Fifty Shades Freed",
+            "popularity": 574.573599,
+            "poster_path": "/jjPJ4s3DWZZvI4vw8Xfi4Vqa1Q8.jpg",
+            "original_language": "en",
+            "original_title": "Fifty Shades Freed",
+            "genre_ids": [
+                18,
+                10749
+            ],
+            "backdrop_path": "/9ywA15OAiwjSTvg3cBs9B7kOCBF.jpg",
+            "adult": false,
+            "overview": "Believing they have left behind shadowy figures from their past, newlyweds Christian and Ana fully embrace an inextricable connection and shared life of luxury. But just as she steps into her role as Mrs. Grey and he relaxes into an unfamiliar stability, new threats could jeopardize their happy ending before it even begins.",
+            "release_date": "2018-02-07"
+        },
+        {
+            "vote_count": 4586,
+            "id": 284054,
+            "video": false,
+            "vote_average": 7.3,
+            "title": "Black Panther",
+            "popularity": 259.218769,
+            "poster_path": "/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
+            "original_language": "en",
+            "original_title": "Black Panther",
+            "genre_ids": [
+                28,
+                12,
+                14,
+                878
+            ],
+            "backdrop_path": "/AlFqBwJnokrp9zWTXOUv7uhkaeq.jpg",
+            "adult": false,
+            "overview": "King T'Challa returns home from America to the reclusive, technologically advanced African nation of Wakanda to serve as his country's new leader. However, T'Challa soon finds that he is challenged for the throne by factions within his own country as well as without.  Using powers reserved to Wakandan kings, T'Challa assumes the Black Panther mantel to join with girlfriend Nakia, the queen-mother, his princess-kid sister,  members of the Dora Milaje (the Wakandan 'special forces') and an American secret agent, to prevent Wakanda from being dragged into a world war.",
+            "release_date": "2018-02-13"
+        },
+        {
+            "vote_count": 5925,
+            "id": 284053,
+            "video": false,
+            "vote_average": 7.4,
+            "title": "Thor: Ragnarok",
+            "popularity": 223.269212,
+            "poster_path": "/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg",
+            "original_language": "en",
+            "original_title": "Thor: Ragnarok",
+            "genre_ids": [
+                28,
+                12,
+                14
+            ],
+            "backdrop_path": "/kaIfm5ryEOwYg8mLbq8HkPuM1Fo.jpg",
+            "adult": false,
+            "overview": "Thor is imprisoned on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the prophecy of destruction to his homeworld and the end of Asgardian civilization, at the hands of an all-powerful new threat, the ruthless Hela.",
+            "release_date": "2017-10-25"
+        },
+        {
+            "vote_count": 377,
+            "id": 427641,
+            "video": false,
+            "vote_average": 5.9,
+            "title": "Rampage",
+            "popularity": 216.030997,
+            "poster_path": "/30oXQKwibh0uANGMs0Sytw3uN22.jpg",
+            "original_language": "en",
+            "original_title": "Rampage",
+            "genre_ids": [
+                28,
+                12,
+                878
+            ],
+            "backdrop_path": "/wrqUiMXttHE4UBFMhLHlN601MZh.jpg",
+            "adult": false,
+            "overview": "Primatologist Davis Okoye shares an unshakable bond with George, the extraordinarily intelligent, silverback gorilla who has been in his care since birth.  But a rogue genetic experiment gone awry mutates this gentle ape into a raging creature of enormous size.  To make matters worse, it’s soon discovered there are other similarly altered animals.  As these newly created alpha predators tear across North America, destroying everything in their path, Okoye teams with a discredited genetic engineer to secure an antidote, fighting his way through an ever-changing battlefield, not only to halt a global catastrophe but to save the fearsome creature that was once his friend.",
+            "release_date": "2018-04-12"
+        },
+        {
+            "vote_count": 4191,
+            "id": 354912,
+            "video": false,
+            "vote_average": 7.8,
+            "title": "Coco",
+            "popularity": 166.647391,
+            "poster_path": "/eKi8dIrr8voobbaGzDpe8w0PVbC.jpg",
+            "original_language": "en",
+            "original_title": "Coco",
+            "genre_ids": [
+                12,
+                35,
+                10751,
+                16
+            ],
+            "backdrop_path": "/askg3SMvhqEl4OL52YuvdtY40Yb.jpg",
+            "adult": false,
+            "overview": "Despite his family’s baffling generations-old ban on music, Miguel dreams of becoming an accomplished musician like his idol, Ernesto de la Cruz. Desperate to prove his talent, Miguel finds himself in the stunning and colorful Land of the Dead following a mysterious chain of events. Along the way, he meets charming trickster Hector, and together, they set off on an extraordinary journey to unlock the real story behind Miguel's family history.",
+            "release_date": "2017-10-27"
+        },
+        {
+            "vote_count": 5211,
+            "id": 181808,
+            "video": false,
+            "vote_average": 7.1,
+            "title": "Star Wars: The Last Jedi",
+            "popularity": 117.082777,
+            "poster_path": "/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg",
+            "original_language": "en",
+            "original_title": "Star Wars: The Last Jedi",
+            "genre_ids": [
+                14,
+                12,
+                878
+            ],
+            "backdrop_path": "/bIUaCtWaRgd78SnoHJDI8TNf7Sd.jpg",
+            "adult": false,
+            "overview": "Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength of her powers. Meanwhile, the Resistance prepares to do battle with the First Order.",
+            "release_date": "2017-12-13"
+        },
+        {
+            "vote_count": 841,
+            "id": 447332,
+            "video": false,
+            "vote_average": 7.4,
+            "title": "A Quiet Place",
+            "popularity": 108.718094,
+            "poster_path": "/nAU74GmpUk7t5iklEp3bufwDq4n.jpg",
+            "original_language": "en",
+            "original_title": "A Quiet Place",
+            "genre_ids": [
+                18,
+                27,
+                53,
+                878
+            ],
+            "backdrop_path": "/roYyPiQDQKmIKUEhO912693tSja.jpg",
+            "adult": false,
+            "overview": "A family is forced to live in silence while hiding from creatures that hunt by sound.",
+            "release_date": "2018-04-05"
+        },
+        {
+            "vote_count": 3706,
+            "id": 399055,
+            "video": false,
+            "vote_average": 7.3,
+            "title": "The Shape of Water",
+            "popularity": 105.142346,
+            "poster_path": "/k4FwHlMhuRR5BISY2Gm2QZHlH5Q.jpg",
+            "original_language": "en",
+            "original_title": "The Shape of Water",
+            "genre_ids": [
+                18,
+                14,
+                10749
+            ],
+            "backdrop_path": "/abirSHwWgKajV3hXhaIR5lcCIXe.jpg",
+            "adult": false,
+            "overview": "An other-worldly story, set against the backdrop of Cold War era America circa 1962, where a mute janitor working at a lab falls in love with an amphibious man being held captive there and devises a plan to help him escape.",
+            "release_date": "2017-12-01"
+        },
+        {
+            "vote_count": 1558,
+            "id": 336843,
+            "video": false,
+            "vote_average": 7.1,
+            "title": "Maze Runner: The Death Cure",
+            "popularity": 104.55811,
+            "poster_path": "/7GgZ6DGezkh3szFdvskH5XD4V0t.jpg",
+            "original_language": "en",
+            "original_title": "Maze Runner: The Death Cure",
+            "genre_ids": [
+                28,
+                9648,
+                878,
+                53,
+                12,
+                14
+            ],
+            "backdrop_path": "/bvbyidkMaBls1LTaIWYY6UmYTaL.jpg",
+            "adult": false,
+            "overview": "Thomas leads his group of escaped Gladers on their final and most dangerous mission yet. To save their friends, they must break into the legendary Last City, a WCKD-controlled labyrinth that may turn out to be the deadliest maze of all. Anyone who makes it out alive will get answers to the questions the Gladers have been asking since they first arrived in the maze.",
+            "release_date": "2018-01-17"
+        },
+        {
+            "vote_count": 1309,
+            "id": 274855,
+            "video": false,
+            "vote_average": 5.7,
+            "title": "Geostorm",
+            "popularity": 103.572848,
+            "poster_path": "/nrsx0jEaBgXq4PWo7SooSnYJTv.jpg",
+            "original_language": "en",
+            "original_title": "Geostorm",
+            "genre_ids": [
+                28,
+                878,
+                53
+            ],
+            "backdrop_path": "/79X8JkGxzc1tJMi0KxUSaPLooVg.jpg",
+            "adult": false,
+            "overview": "After an unprecedented series of natural disasters threatened the planet, the world's leaders came together to create an intricate network of satellites to control the global climate and keep everyone safe. But now, something has gone wrong: the system built to protect Earth is attacking it, and it becomes a race against the clock to uncover the real threat before a worldwide geostorm wipes out everything and everyone along with it.",
+            "release_date": "2017-10-13"
+        },
+        {
+            "vote_count": 4318,
+            "id": 141052,
+            "video": false,
+            "vote_average": 6.3,
+            "title": "Justice League",
+            "popularity": 76.573976,
+            "poster_path": "/eifGNCSDuxJeS1loAXil5bIGgvC.jpg",
+            "original_language": "en",
+            "original_title": "Justice League",
+            "genre_ids": [
+                28,
+                12,
+                14,
+                878
+            ],
+            "backdrop_path": "/o5T8rZxoWSBMYwjsUFUqTt6uMQB.jpg",
+            "adult": false,
+            "overview": "Fuelled by his restored faith in humanity and inspired by Superman's selfless act, Bruce Wayne and Diana Prince assemble a team of metahumans consisting of Barry Allen, Arthur Curry and Victor Stone to face the catastrophic threat of Steppenwolf and the Parademons who are on the hunt for three Mother Boxes on Earth.",
+            "release_date": "2017-11-15"
+        },
+        {
+            "vote_count": 1704,
+            "id": 333339,
+            "video": false,
+            "vote_average": 7.9,
+            "title": "Ready Player One",
+            "popularity": 72.426058,
+            "poster_path": "/pU1ULUq8D3iRxl1fdX2lZIzdHuI.jpg",
+            "original_language": "en",
+            "original_title": "Ready Player One",
+            "genre_ids": [
+                12,
+                878,
+                28
+            ],
+            "backdrop_path": "/q7fXcrDPJcf6t3rzutaNwTzuKP1.jpg",
+            "adult": false,
+            "overview": "When the creator of a popular video game system dies, a virtual contest is created to compete for his fortune.",
+            "release_date": "2018-03-28"
+        },
+        {
+            "vote_count": 4205,
+            "id": 335984,
+            "video": false,
+            "vote_average": 7.3,
+            "title": "Blade Runner 2049",
+            "popularity": 61.212529,
+            "poster_path": "/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+            "original_language": "en",
+            "original_title": "Blade Runner 2049",
+            "genre_ids": [
+                9648,
+                878,
+                53
+            ],
+            "backdrop_path": "/mVr0UiqyltcfqxbAUcLl9zWL8ah.jpg",
+            "adult": false,
+            "overview": "Thirty years after the events of the first film, a new blade runner, LAPD Officer K, unearths a long-buried secret that has the potential to plunge what's left of society into chaos. K's discovery leads him on a quest to find Rick Deckard, a former LAPD blade runner who has been missing for 30 years.",
+            "release_date": "2017-10-04"
+        },
+        {
+            "vote_count": 21,
+            "id": 499772,
+            "video": false,
+            "vote_average": 5.1,
+            "title": "Meet Me In St. Gallen",
+            "popularity": 55.11108,
+            "poster_path": "/uGntNjUx6YAzbVy7RDgxWnWsdet.jpg",
+            "original_language": "tl",
+            "original_title": "Meet Me In St. Gallen",
+            "genre_ids": [
+                18,
+                10749
+            ],
+            "backdrop_path": "/4QrbczSQGZQA7BG9xMhccQI7LHm.jpg",
+            "adult": false,
+            "overview": "The story of Jesse and Celeste who meets at an unexpected time in their lives. They then realize their names are the same as the characters in the popular break-up romantic comedy, Celeste and Jesse Forever.",
+            "release_date": "2018-02-07"
+        },
+        {
+            "vote_count": 387,
+            "id": 449443,
+            "video": false,
+            "vote_average": 6.3,
+            "title": "Den of Thieves",
+            "popularity": 53.240764,
+            "poster_path": "/AfybH6GbGFw1F9bcETe2yu25mIE.jpg",
+            "original_language": "en",
+            "original_title": "Den of Thieves",
+            "genre_ids": [
+                28,
+                53,
+                80
+            ],
+            "backdrop_path": "/s3FDBLH4qc1IcjexB05Qvbn3wxO.jpg",
+            "adult": false,
+            "overview": "While planning a bank heist, a thief gets trapped between two sets of criminals.",
+            "release_date": "2018-01-18"
+        },
+        {
+            "vote_count": 34,
+            "id": 485942,
+            "video": false,
+            "vote_average": 6.8,
+            "title": "Batman Ninja",
+            "popularity": 52.948164,
+            "poster_path": "/5xSB0Npkc9Fd9kahKBsq9P4Cdzp.jpg",
+            "original_language": "ja",
+            "original_title": "Batman Ninja",
+            "genre_ids": [
+                28,
+                16
+            ],
+            "backdrop_path": "/cDbJAqGIsnpJfiNiYNBQYQs0ZWY.jpg",
+            "adult": false,
+            "overview": "«Batman Ninja» takes a journey across the ages as Gorilla Grodd's time displacement machine transports many of Batman's worst enemies to feudal Japan —along with the Dark Knight and a few of his allies. The villains take over the forms of the feudal lords that rule the divided land, with the Joker taking the lead among the warring factions. As his traditional high-tech weaponry is exhausted almost immediately, Batman must rely on his intellect and his allies —including Catwoman and the extended Bat-family— to restore order to the land, and return to present-day Gotham City.",
+            "release_date": "2018-04-24"
+        },
+        {
+            "vote_count": 563,
+            "id": 268896,
+            "video": false,
+            "vote_average": 5.9,
+            "title": "Pacific Rim: Uprising",
+            "popularity": 51.703657,
+            "poster_path": "/v5HlmJK9bdeHxN2QhaFP1ivjX3U.jpg",
+            "original_language": "en",
+            "original_title": "Pacific Rim: Uprising",
+            "genre_ids": [
+                28,
+                14,
+                878,
+                12
+            ],
+            "backdrop_path": "/mo5EJsExrQCroqPDwUwp6jeq0xS.jpg",
+            "adult": false,
+            "overview": "It has been ten years since The Battle of the Breach and the oceans are still, but restless. Vindicated by the victory at the Breach, the Jaeger program has evolved into the most powerful global defense force in human history. The PPDC now calls upon the best and brightest to rise up and become the next generation of heroes when the Kaiju threat returns.",
+            "release_date": "2018-03-21"
+        },
+        {
+            "vote_count": 3906,
+            "id": 353486,
+            "video": false,
+            "vote_average": 6.6,
+            "title": "Jumanji: Welcome to the Jungle",
+            "popularity": 51.530667,
+            "poster_path": "/bXrZ5iHBEjH7WMidbUDQ0U2xbmr.jpg",
+            "original_language": "en",
+            "original_title": "Jumanji: Welcome to the Jungle",
+            "genre_ids": [
+                28,
+                12,
+                35,
+                10751
+            ],
+            "backdrop_path": "/rz3TAyd5kmiJmozp3GUbYeB5Kep.jpg",
+            "adult": false,
+            "overview": "The tables are turned as four teenagers are sucked into Jumanji's world - pitted against rhinos, black mambas and an endless variety of jungle traps and puzzles. To survive, they'll play as characters from the game.",
+            "release_date": "2017-12-09"
+        },
+        {
+            "vote_count": 2719,
+            "id": 359940,
+            "video": false,
+            "vote_average": 8.2,
+            "title": "Three Billboards Outside Ebbing, Missouri",
+            "popularity": 49.752156,
+            "poster_path": "/vgvw6w1CtcFkuXXn004S5wQsHRl.jpg",
+            "original_language": "en",
+            "original_title": "Three Billboards Outside Ebbing, Missouri",
+            "genre_ids": [
+                80,
+                18
+            ],
+            "backdrop_path": "/huz4SOpcd2XjJiLVX6xmQZYiiDA.jpg",
+            "adult": false,
+            "overview": "After seven months have passed without a culprit in her daughter's murder case, Mildred Hayes makes a bold move, painting three signs leading into her town with a controversial message directed at Bill Willoughby, the town's revered chief of police. When his second-in-command Officer Jason Dixon, an immature mother's boy with a penchant for violence, gets involved, the battle between Mildred and Ebbing's law enforcement is only exacerbated.",
+            "release_date": "2017-11-10"
+        }
+    ]
+}
+
+5)search with movie name or title and getting overview [[[movie id]]]
+
+https://api.themoviedb.org/3/search/movie?api_key=3f0a291b35d827d21951f5dec2a2505c&query=harry+potter
+
+{
+    "page": 1,
+    "total_results": 33,
+    "total_pages": 2,
+    "results": [
+        {
+            "vote_count": 7487,
+            "id": 675,
+            "video": false,
+            "vote_average": 7.5,
+            "title": "Harry Potter and the Order of the Phoenix",
+            "popularity": 32.889153,
+            "poster_path": "/4YnLxYLHhT4UQ8i9jxAXWy46Xuw.jpg",
+            "original_language": "en",
+            "original_title": "Harry Potter and the Order of the Phoenix",
+            "genre_ids": [
+                12,
+                14,
+                10751,
+                9648
+            ],
+            "backdrop_path": "/gGt4ePOhD8ilxd3FYhKB06L2CyG.jpg",
+            "adult": false,
+            "overview": "Returning for his fifth year of study at Hogwarts, Harry is stunned to find that his warnings about the return of Lord Voldemort have been ignored. Left with no choice, Harry takes matters into his own hands, training a small group of students – dubbed 'Dumbledore's Army' – to defend themselves against the dark arts.",
+            "release_date": "2007-06-28"
+        },
+        {
+            "vote_count": 7977,
+            "id": 672,
+            "video": false,
+            "vote_average": 7.5,
+            "title": "Harry Potter and the Chamber of Secrets",
+            "popularity": 28.279295,
+            "poster_path": "/sdEOH0992YZ0QSxgXNIGLq1ToUi.jpg",
+            "original_language": "en",
+            "original_title": "Harry Potter and the Chamber of Secrets",
+            "genre_ids": [
+                12,
+                14,
+                10751
+            ],
+            "backdrop_path": "/2grHB4caPBmOyDW9x7NAwldtk8Y.jpg",
+            "adult": false,
+            "overview": "Ignoring threats to his life, Harry returns to Hogwarts to investigate – aided by Ron and Hermione – a mysterious series of attacks.",
+            "release_date": "2002-11-13"
+        },
+        {
+            "vote_count": 9463,
+            "id": 671,
+            "video": false,
+            "vote_average": 7.6,
+            "title": "Harry Potter and the Philosopher's Stone",
+            "popularity": 37.271532,
+            "poster_path": "/dCtFvscYcXQKTNvyyaQr2g2UacJ.jpg",
+            "original_language": "en",
+            "original_title": "Harry Potter and the Philosopher's Stone",
+            "genre_ids": [
+                12,
+                14,
+                10751
+            ],
+            "backdrop_path": "/vYZvThuxWBmjXOyRK5IoY9kOSq9.jpg",
+            "adult": false,
+            "overview": "Harry Potter has lived under the stairs at his aunt and uncle's house his whole life. But on his 11th birthday, he learns he's a powerful wizard -- with a place waiting for him at the Hogwarts School of Witchcraft and Wizardry. As he learns to harness his newfound powers with the help of the school's kindly headmaster, Harry uncovers the truth about his parents' deaths -- and about the villain who's to blame.",
+            "release_date": "2001-11-16"
+        },
+        {
+            "vote_count": 7222,
+            "id": 767,
+            "video": false,
+            "vote_average": 7.5,
+            "title": "Harry Potter and the Half-Blood Prince",
+            "popularity": 24.059461,
+            "poster_path": "/bFXys2nhALwDvpkF3dP3Vvdfn8b.jpg",
+            "original_language": "en",
+            "original_title": "Harry Potter and the Half-Blood Prince",
+            "genre_ids": [
+                12,
+                14,
+                10751
+            ],
+            "backdrop_path": "/kRyojLYtWPsBKfDhphhhl1FdM5a.jpg",
+            "adult": false,
+            "overview": "As Harry begins his sixth year at Hogwarts, he discovers an old book marked as 'Property of the Half-Blood Prince', and begins to learn more about Lord Voldemort's dark past.",
+            "release_date": "2009-07-07"
+        },
+        {
+            "vote_count": 7626,
+            "id": 674,
+            "video": false,
+            "vote_average": 7.6,
+            "title": "Harry Potter and the Goblet of Fire",
+            "popularity": 25.047427,
+            "poster_path": "/6sASqcdrEHXxUhA3nFpjrRecPD2.jpg",
+            "original_language": "en",
+            "original_title": "Harry Potter and the Goblet of Fire",
+            "genre_ids": [
+                12,
+                14,
+                10751
+            ],
+            "backdrop_path": "/gzKW3emulMxIHzuXxZoyDB1lei9.jpg",
+            "adult": false,
+            "overview": "Harry starts his fourth year at Hogwarts, competes in the treacherous Triwizard Tournament and faces the evil Lord Voldemort. Ron and Hermione help Harry manage the pressure – but Voldemort lurks, awaiting his chance to destroy Harry and all that he stands for.",
+            "release_date": "2005-11-16"
+        },
+        {
+            "vote_count": 8093,
+            "id": 12445,
+            "video": false,
+            "vote_average": 7.9,
+            "title": "Harry Potter and the Deathly Hallows: Part 2",
+            "popularity": 35.512318,
+            "poster_path": "/fTplI1NCSuEDP4ITLcTps739fcC.jpg",
+            "original_language": "en",
+            "original_title": "Harry Potter and the Deathly Hallows: Part 2",
+            "genre_ids": [
+                10751,
+                14,
+                12
+            ],
+            "backdrop_path": "/6n0DAcyjTHS6888mt8U9ZsLy9nR.jpg",
+            "adult": false,
+            "overview": "Harry, Ron and Hermione continue their quest to vanquish the evil Voldemort once and for all. Just as things begin to look hopeless for the young wizards, Harry discovers a trio of magical objects that endow him with powers to rival Voldemort's formidable skills.",
+            "release_date": "2011-07-07"
+        },
+        {
+            "vote_count": 7943,
+            "id": 673,
+            "video": false,
+            "vote_average": 7.8,
+            "title": "Harry Potter and the Prisoner of Azkaban",
+            "popularity": 22.282837,
+            "poster_path": "/jUFjMoLh8T2CWzHUSjKCojI5SHu.jpg",
+            "original_language": "en",
+            "original_title": "Harry Potter and the Prisoner of Azkaban",
+            "genre_ids": [
+                12,
+                14,
+                10751
+            ],
+            "backdrop_path": "/wUpBH6RIH4uOiWoPjj8MKUemu9F.jpg",
+            "adult": false,
+            "overview": "Harry, Ron and Hermione return to Hogwarts for another magic-filled year. Harry comes face to face with danger yet again, this time in the form of escaped convict, Sirius Black – and turns to sympathetic Professor Lupin for help.",
+            "release_date": "2004-05-31"
+        },
+        {
+            "vote_count": 7479,
+            "id": 12444,
+            "video": false,
+            "vote_average": 7.6,
+            "title": "Harry Potter and the Deathly Hallows: Part 1",
+            "popularity": 21.440184,
+            "poster_path": "/maP4MTfPCeVD2FZbKTLUgriOW4R.jpg",
+            "original_language": "en",
+            "original_title": "Harry Potter and the Deathly Hallows: Part 1",
+            "genre_ids": [
+                12,
+                14,
+                10751
+            ],
+            "backdrop_path": "/8YA36faYlkpfp6aozcGsqq68pZ9.jpg",
+            "adult": false,
+            "overview": "Harry, Ron and Hermione walk away from their last year at Hogwarts to find and destroy the remaining Horcruxes, putting an end to Voldemort's bid for immortality. But with Harry's beloved Dumbledore dead and Voldemort's unscrupulous Death Eaters on the loose, the world is more dangerous than ever.",
+            "release_date": "2010-10-17"
+        },
+        {
+            "vote_count": 26,
+            "id": 389593,
+            "video": false,
+            "vote_average": 7.5,
+            "title": "Severus Snape and the Marauders",
+            "popularity": 4.096123,
+            "poster_path": "/gqhtgXFUrSbkrphkP7vJOdO6fww.jpg",
+            "original_language": "en",
+            "original_title": "Severus Snape and the Marauders",
+            "genre_ids": [
+                12,
+                18,
+                14,
+                9648
+            ],
+            "backdrop_path": "/gfu8uEzPUMb0qKouwSEZ9FcetwO.jpg",
+            "adult": false,
+            "overview": "Four friends celebrate at a bar graduating Hogwarts and contemplate their future, when an old rival arrives. Knowing what side Severus Snape will fight in the war, James Potter and The Marauders confront Snape for the final time.",
+            "release_date": "2016-03-01"
+        },
+        {
+            "vote_count": 2,
+            "id": 483898,
+            "video": true,
+            "vote_average": 9,
+            "title": "50 Greatest Harry Potter Moments",
+            "popularity": 2.34536,
+            "poster_path": "/ycPuj1fbbzdVzKPNUh8uBL9j4tZ.jpg",
+            "original_language": "en",
+            "original_title": "50 Greatest Harry Potter Moments",
+            "genre_ids": [
+                99
+            ],
+            "backdrop_path": null,
+            "adult": false,
+            "overview": "To mark the release two weeks ago of the eighth and final movie in the series, Robbie Coltrane narrates a countdown of the movie franchise's best moments. From Harry's first meeting with Ron and Hermione aboard the Hogwarts Express through to magical mysteries.",
+            "release_date": "2011-07-27"
+        },
+        {
+            "vote_count": 13,
+            "id": 459643,
+            "video": false,
+            "vote_average": 7.8,
+            "title": "Le Maitre de la Mort",
+            "popularity": 2.371467,
+            "poster_path": "/iGnxSiMx1EQ4wI2fEKj1rK3j4mp.jpg",
+            "original_language": "fr",
+            "original_title": "Le Maitre de la Mort",
+            "genre_ids": [
+                14
+            ],
+            "backdrop_path": "/l9cKLSPM3dNUQnVKrE5z6MTsked.jpg",
+            "adult": false,
+            "overview": "In the 1940s, Muggles clashed in a violent world war, but in the world of wizards a much greater threat, hidden in the shadows since its birth, is about to sow fear and death. From the London shallows to the Ministry of Magic, no one knows the name of the evil that rages in the shadows. Elyana Ogden, recently certified auror, is entrusted with an investigation into strange series of murders. She does not suspect that her path will lead her to meet the most dangerous dark lord of all time.",
+            "release_date": "2016-10-31"
+        },
+        {
+            "vote_count": 2,
+            "id": 430481,
+            "video": false,
+            "vote_average": 5.5,
+            "title": "Harry Potter: Witchcraft Repackaged",
+            "popularity": 1.090881,
+            "poster_path": "/xjve882VGrNbyPZDcR7QdapjMaq.jpg",
+            "original_language": "en",
+            "original_title": "Harry Potter: Witchcraft Repackaged",
+            "genre_ids": [
+                99
+            ],
+            "backdrop_path": null,
+            "adult": false,
+            "overview": "Does Witchcraft/Wicca actually have power? If so, what is it's source? Does the Harry Potter series ' presentation of child-friendly Witchcraft make it's philosophy any more acceptable just because it is packaged as \"children's fantasy literature\"?",
+            "release_date": "2001-01-01"
+        },
+        {
+            "vote_count": 0,
+            "id": 521845,
+            "video": false,
+            "vote_average": 0,
+            "title": "Harry Potter Y La Piedra Filosofal",
+            "popularity": 1.25,
+            "poster_path": null,
+            "original_language": "es",
+            "original_title": "Harry Potter Y La Piedra Filosofal",
+            "genre_ids": [],
+            "backdrop_path": null,
+            "adult": false,
+            "overview": "",
+            "release_date": ""
+        },
+        {
+            "vote_count": 4,
+            "id": 482408,
+            "video": false,
+            "vote_average": 5.8,
+            "title": "Harry Potter - A History Of Magic",
+            "popularity": 1.876324,
+            "poster_path": "/tEbdRAYmis6YdqNFLU1dHMPl7u4.jpg",
+            "original_language": "en",
+            "original_title": "Harry Potter - A History Of Magic",
+            "genre_ids": [
+                99,
+                14,
+                36
+            ],
+            "backdrop_path": "/mjCYpJXCBYDZgMr1U1KZcFgFDfC.jpg",
+            "adult": false,
+            "overview": "A thrilling journey through legends, belief and folklore, this film goes behind the scenes with the British Library as they search to tell that story through objects in their collection, in an ambitious new exhibition: Harry Potter: A History Of Magic.  J.K. Rowling, who is lending unseen manuscripts, drawings and drafts from her private archives (which will sit alongside treasures from the British Library, as well as original drafts and drawings from Jim Kay) talks about some of the personal items she has lent to the exhibition and gives new insight into her writing, looking at some of the objects from the exhibition that have fired her imagination.",
+            "release_date": "2017-10-28"
+        },
+        {
+            "vote_count": 14,
+            "id": 376816,
+            "video": false,
+            "vote_average": 7.2,
+            "title": "Creating The World of Harry Potter, Part 1: The Magic Begins",
+            "popularity": 3.830087,
+            "poster_path": "/5KiMGwcO95vldDpitep9PR7duYn.jpg",
+            "original_language": "en",
+            "original_title": "Creating The World of Harry Potter, Part 1: The Magic Begins",
+            "genre_ids": [
+                99
+            ],
+            "backdrop_path": null,
+            "adult": false,
+            "overview": "The magic begins. The choices, the breakthroughs, the early decisions that impacted all the films are explored here via rare footage, cast and crew reminiscences and more. Learn about the extensive search by producer David Heyman and director Chris Columbus for the perfect actors to portray Harry, Ron and Hermione and see the earliest meeting of Daniel Radcliffe, Rupert Grint and Emma Watson.  Be on the scene as imagination and know-how combine to create a look that's distinctly wizardly. From details tiny (what about Hermione's buckteeth?) to huge (Quidditch, anyone?), this is the fun and fascinating opening of a whole new portal into Harry's world. Begin the magic.",
+            "release_date": "2009-11-17"
+        },
+        {
+            "vote_count": 3,
+            "id": 116972,
+            "video": false,
+            "vote_average": 5.3,
+            "title": "Discovering the Real World of Harry Potter",
+            "popularity": 1.431272,
+            "poster_path": "/8XjQmztBzBb2EgrUBnIEF9fdBGC.jpg",
+            "original_language": "en",
+            "original_title": "Discovering the Real World of Harry Potter",
+            "genre_ids": [
+                10751,
+                99
+            ],
+            "backdrop_path": null,
+            "adult": false,
+            "overview": "Explore the myths and legends that inhabit the real world of Harry Potter. Follow award-winning documentary filmmakers as they offer insights to witches, wizards, Greek gods, ancient Celts, ghosts, magical creatures, alchemy, and ancient spells. Narrated by British actor Hugh Laurie, this fascinating documentary brings new dimensions to the historical and scientific world behind the Harry Potter series.",
+            "release_date": "2001-12-10"
+        },
+        {
+            "vote_count": 1,
+            "id": 341415,
+            "video": false,
+            "vote_average": 10,
+            "title": "'Harry Potter': Behind the Magic",
+            "popularity": 1.105116,
+            "poster_path": null,
+            "original_language": "en",
+            "original_title": "'Harry Potter': Behind the Magic",
+            "genre_ids": [],
+            "backdrop_path": null,
+            "adult": false,
+            "overview": "DVD that came with special box set. Covers the making of Harry Potter and the Goblet of Fire (2005).",
+            "release_date": "2005-11-19"
+        },
+        {
+            "vote_count": 11,
+            "id": 459697,
+            "video": false,
+            "vote_average": 7.4,
+            "title": "The Greater Good - Harry Potter Fan Film",
+            "popularity": 1.455307,
+            "poster_path": "/uPfWON5xIFSOgTaHdW99BlLEiA2.jpg",
+            "original_language": "en",
+            "original_title": "The Greater Good - Harry Potter Fan Film",
+            "genre_ids": [
+                14,
+                28,
+                12
+            ],
+            "backdrop_path": "/fs4oMKsrDLgO95GBphG5OCgTHYA.jpg",
+            "adult": false,
+            "overview": "",
+            "release_date": "2013-12-03"
+        },
+        {
+            "vote_count": 2,
+            "id": 109004,
+            "video": false,
+            "vote_average": 5.3,
+            "title": "The Seeker's Guide to Harry Potter",
+            "popularity": 1.109655,
+            "poster_path": "/skMkvsUisKC6Ona9pn0ilws4oHz.jpg",
+            "original_language": "en",
+            "original_title": "The Seeker's Guide to Harry Potter",
+            "genre_ids": [
+                99
+            ],
+            "backdrop_path": null,
+            "adult": false,
+            "overview": "In this documentary, Dr. Geo Trevarthen uses psychology, theology and other disciplines to explore the mystical world of J.K. Rowling's Harry Potter novels, giving fans a deeper appreciation for the symbolism and magic in the books. Looking at the entire series, Trevarthen pays special attention to how readers' lives may intersect with shamanism and other real-world mystical traditions that echo through the halls of Hogwarts.",
+            "release_date": "2010-11-23"
+        },
+        {
+            "vote_count": 0,
+            "id": 500008,
+            "video": false,
+            "vote_average": 0,
+            "title": "Harry Potter: The Making of Diagon Alley",
+            "popularity": 1.005625,
+            "poster_path": null,
+            "original_language": "en",
+            "original_title": "Harry Potter: The Making of Diagon Alley",
+            "genre_ids": [],
+            "backdrop_path": null,
+            "adult": false,
+            "overview": "An inside look into the creation of Universal Studio's Diagon Alley attraction.",
+            "release_date": ""
+        }
+    ]
+}
+
+
+search from movie id from above result   
+
+https://api.themoviedb.org/3/movie/343611?api_key=3f0a291b35d827d21951f5dec2a2505c
+
+{
+    "adult": false,
+    "backdrop_path": "/nDS8rddEK74HfAwCC5CoT6Cwzlt.jpg",
+    "belongs_to_collection": {
+        "id": 403374,
+        "name": "Jack Reacher Collection",
+        "poster_path": "/7baSUtFKi8PQ9SLo6ECYBfAW2K8.jpg",
+        "backdrop_path": "/vViRXFnSyGJ2fzMbcc5sqTKswcd.jpg"
+    },
+    "budget": 60000000,
+    "genres": [
+        {
+            "id": 28,
+            "name": "Action"
+        }
+    ],
+    "homepage": "http://www.jackreachermovie.com/",
+    "id": 343611,
+    "imdb_id": "tt3393786",
+    "original_language": "en",
+    "original_title": "Jack Reacher: Never Go Back",
+    "overview": "Jack Reacher must uncover the truth behind a major government conspiracy in order to clear his name. On the run as a fugitive from the law, Reacher uncovers a potential secret from his past that could change his life forever.",
+    "popularity": 11.967824,
+    "poster_path": "/IfB9hy4JH1eH6HEfIgIGORXi5h.jpg",
+    "production_companies": [
+        {
+            "id": 21777,
+            "logo_path": null,
+            "name": "TC Productions",
+            "origin_country": ""
+        },
+        {
+            "id": 4,
+            "logo_path": "/fycMZt242LVjagMByZOLUGbCvv3.png",
+            "name": "Paramount",
+            "origin_country": "US"
+        },
+        {
+            "id": 82819,
+            "logo_path": "/zlFa3VNua4hJyGEI4X2sqDrtEH9.png",
+            "name": "Skydance Media",
+            "origin_country": "US"
+        },
+        {
+            "id": 83645,
+            "logo_path": null,
+            "name": "Huahua Media",
+            "origin_country": "CN"
+        },
+        {
+            "id": 3407,
+            "logo_path": null,
+            "name": "Shanghai Film Group",
+            "origin_country": ""
+        }
+    ],
+    "production_countries": [
+        {
+            "iso_3166_1": "CN",
+            "name": "China"
+        },
+        {
+            "iso_3166_1": "US",
+            "name": "United States of America"
+        }
+    ],
+    "release_date": "2016-10-19",
+    "revenue": 162146076,
+    "runtime": 118,
+    "spoken_languages": [
+        {
+            "iso_639_1": "en",
+            "name": "English"
+        }
+    ],
+    "status": "Released",
+    "tagline": "Justice is Coming.",
+    "title": "Jack Reacher: Never Go Back",
+    "video": false,
+    "vote_average": 5.4,
+    "vote_count": 2237
+}
+
+
+
+
+6)searching movies of an actor with name
+
+http://api.tmdb.org/3/search/person?api_key=3f0a291b35d827d21951f5dec2a2505c&query=emma%20watson
+
+
+{
+    "page": 1,
+    "total_results": 1,
+    "total_pages": 1,
+    "results": [
+        {
+            "popularity": 15.306726,
+            "id": 10990,
+            "profile_path": "/4UvcvYaQ6qUoN3NMgO2vZWBSa9W.jpg",
+            "name": "Emma Watson",
+            "known_for": [
+                {
+                    "vote_average": 7.6,
+                    "vote_count": 9463,
+                    "id": 671,
+                    "video": false,
+                    "media_type": "movie",
+                    "title": "Harry Potter and the Philosopher's Stone",
+                    "popularity": 37.271532,
+                    "poster_path": "/dCtFvscYcXQKTNvyyaQr2g2UacJ.jpg",
+                    "original_language": "en",
+                    "original_title": "Harry Potter and the Philosopher's Stone",
+                    "genre_ids": [
+                        12,
+                        14,
+                        10751
+                    ],
+                    "backdrop_path": "/vYZvThuxWBmjXOyRK5IoY9kOSq9.jpg",
+                    "adult": false,
+                    "overview": "Harry Potter has lived under the stairs at his aunt and uncle's house his whole life. But on his 11th birthday, he learns he's a powerful wizard -- with a place waiting for him at the Hogwarts School of Witchcraft and Wizardry. As he learns to harness his newfound powers with the help of the school's kindly headmaster, Harry uncovers the truth about his parents' deaths -- and about the villain who's to blame.",
+                    "release_date": "2001-11-16"
+                },
+                {
+                    "vote_average": 7.9,
+                    "vote_count": 8093,
+                    "id": 12445,
+                    "video": false,
+                    "media_type": "movie",
+                    "title": "Harry Potter and the Deathly Hallows: Part 2",
+                    "popularity": 35.512318,
+                    "poster_path": "/fTplI1NCSuEDP4ITLcTps739fcC.jpg",
+                    "original_language": "en",
+                    "original_title": "Harry Potter and the Deathly Hallows: Part 2",
+                    "genre_ids": [
+                        10751,
+                        14,
+                        12
+                    ],
+                    "backdrop_path": "/6n0DAcyjTHS6888mt8U9ZsLy9nR.jpg",
+                    "adult": false,
+                    "overview": "Harry, Ron and Hermione continue their quest to vanquish the evil Voldemort once and for all. Just as things begin to look hopeless for the young wizards, Harry discovers a trio of magical objects that endow him with powers to rival Voldemort's formidable skills.",
+                    "release_date": "2011-07-07"
+                },
+                {
+                    "vote_average": 6.8,
+                    "vote_count": 8090,
+                    "id": 321612,
+                    "video": false,
+                    "media_type": "movie",
+                    "title": "Beauty and the Beast",
+                    "popularity": 133.855777,
+                    "poster_path": "/tWqifoYuwLETmmasnGHO7xBjEtt.jpg",
+                    "original_language": "en",
+                    "original_title": "Beauty and the Beast",
+                    "genre_ids": [
+                        10751,
+                        14,
+                        10749
+                    ],
+                    "backdrop_path": "/6aUWe0GSl69wMTSWWexsorMIvwU.jpg",
+                    "adult": false,
+                    "overview": "A live-action adaptation of Disney's version of the classic tale of a cursed prince and a beautiful young woman who helps him break the spell.",
+                    "release_date": "2017-03-16"
+                }
+            ],
+            "adult": false
+        }
+    ]
+}
+
+
+
+7)actor details and imdb id
+
+https://api.themoviedb.org/3/person/10990?api_key=3f0a291b35d827d21951f5dec2a2505c&language=en-US
+
+
+{
+    "birthday": "1990-04-15",
+    "deathday": null,
+    "id": 10990,
+    "name": "Emma Watson",
+    "also_known_as": [
+        "Emma Charlotte Duerre Watson",
+        "Hermoine Granger"
+    ],
+    "gender": 1,
+    "biography": "Emma Watson (born 15 April 1990) is an English actress who rose to prominence playing Hermione Granger, one of three starring roles in the Harry Potter film series. Watson was cast as Hermione at the age of nine, having previously acted only in school plays. From 2001 to 2011, she starred in eight Harry Potter films alongside Daniel Radcliffe and Rupert Grint. Watson's work on the Harry Potter series has earned her several awards and more than £10 million.\n\nShe made her modelling debut for Burberry's Autumn/Winter campaign in 2009. In 2007, Watson announced her involvement in two non-Harry Potter productions: the television adaptation of the novel Ballet Shoes and an animated film, The Tale of Despereaux. Ballet Shoes was broadcast on 26 December 2007 to an audience of 5.2 million, and The Tale of Despereaux, based on the novel by Kate DiCamillo, was released in 2008 and grossed over US $70 million in worldwide sales. In 2012, she starred in Stephen Chbosky's film adaptation of The Perks of Being a Wallflower, and was cast in the role of Ila in Darren Aronofsky's biblical epic Noah.\n\nDescription above from the Wikipedia article Emma Watson, licensed under CC-BY-SA, full list of contributors on Wikipedia.",
+    "popularity": 14.306726,
+    "place_of_birth": "Paris, France",
+    "profile_path": "/4UvcvYaQ6qUoN3NMgO2vZWBSa9W.jpg",
+    "adult": false,
+    "imdb_id": "nm0914612",
+    "homepage": null
+}
+
+
+
+7)all movies of an actor with person id
+
+https://api.themoviedb.org/3/person/10990/movie_credits?api_key=3f0a291b35d827d21951f5dec2a2505c
+
+
+
+{
+    "cast": [
+        {
+            "character": "Hermione Granger",
+            "credit_id": "52fe4268c3a36847f801c225",
+            "release_date": "2005-11-18",
+            "vote_count": 7626,
+            "video": false,
+            "adult": false,
+            "vote_average": 7.6,
+            "title": "Harry Potter and the Goblet of Fire",
+            "genre_ids": [
+                12,
+                14,
+                10751
+            ],
+            "original_language": "en",
+            "original_title": "Harry Potter and the Goblet of Fire",
+            "popularity": 22.005625,
+            "id": 674,
+            "backdrop_path": "/gzKW3emulMxIHzuXxZoyDB1lei9.jpg",
+            "overview": "Harry starts his fourth year at Hogwarts, competes in the treacherous Triwizard Tournament and faces the evil Lord Voldemort. Ron and Hermione help Harry manage the pressure – but Voldemort lurks, awaiting his chance to destroy Harry and all that he stands for.",
+            "poster_path": "/6sASqcdrEHXxUhA3nFpjrRecPD2.jpg"
+        },
+        {
+            "character": "Hermione Granger",
+            "credit_id": "52fe4268c3a36847f801c4e3",
+            "poster_path": "/4YnLxYLHhT4UQ8i9jxAXWy46Xuw.jpg",
+            "id": 675,
+            "video": false,
+            "vote_count": 7487,
+            "adult": false,
+            "backdrop_path": "/gGt4ePOhD8ilxd3FYhKB06L2CyG.jpg",
+            "genre_ids": [
+                12,
+                14,
+                9648,
+                10751
+            ],
+            "original_language": "en",
+            "original_title": "Harry Potter and the Order of the Phoenix",
+            "popularity": 34.267919,
+            "title": "Harry Potter and the Order of the Phoenix",
+            "vote_average": 7.5,
+            "overview": "Returning for his fifth year of study at Hogwarts, Harry is stunned to find that his warnings about the return of Lord Voldemort have been ignored. Left with no choice, Harry takes matters into his own hands, training a small group of students – dubbed 'Dumbledore's Army' – to defend themselves against the dark arts.",
+            "release_date": "2007-07-11"
+        },
+        {
+            "character": "Hermione Granger",
+            "credit_id": "52fe4273c3a36847f801fa6b",
+            "poster_path": "/bFXys2nhALwDvpkF3dP3Vvdfn8b.jpg",
+            "id": 767,
+            "video": false,
+            "vote_count": 7222,
+            "adult": false,
+            "backdrop_path": "/kRyojLYtWPsBKfDhphhhl1FdM5a.jpg",
+            "genre_ids": [
+                12,
+                14,
+                10751
+            ],
+            "original_language": "en",
+            "original_title": "Harry Potter and the Half-Blood Prince",
+            "popularity": 25.728434,
+            "title": "Harry Potter and the Half-Blood Prince",
+            "vote_average": 7.5,
+            "overview": "As Harry begins his sixth year at Hogwarts, he discovers an old book marked as 'Property of the Half-Blood Prince', and begins to learn more about Lord Voldemort's dark past.",
+            "release_date": "2009-07-08"
+        },
+        {
+            "character": "Hermione Granger",
+            "credit_id": "5317374d92514158d2001c3c",
+            "poster_path": "/sdEOH0992YZ0QSxgXNIGLq1ToUi.jpg",
+            "id": 672,
+            "video": false,
+            "vote_count": 7977,
+            "adult": false,
+            "backdrop_path": "/2grHB4caPBmOyDW9x7NAwldtk8Y.jpg",
+            "genre_ids": [
+                12,
+                14,
+                10751
+            ],
+            "original_language": "en",
+            "original_title": "Harry Potter and the Chamber of Secrets",
+            "popularity": 31.181967,
+            "title": "Harry Potter and the Chamber of Secrets",
+            "vote_average": 7.5,
+            "overview": "Ignoring threats to his life, Harry returns to Hogwarts to investigate – aided by Ron and Hermione – a mysterious series of attacks.",
+            "release_date": "2002-11-15"
+        },
+        {
+            "character": "Hermione Granger",
+            "credit_id": "5317383ec3a36813ad002841",
+            "poster_path": "/jUFjMoLh8T2CWzHUSjKCojI5SHu.jpg",
+            "id": 673,
+            "video": false,
+            "vote_count": 7943,
+            "adult": false,
+            "backdrop_path": "/wUpBH6RIH4uOiWoPjj8MKUemu9F.jpg",
+            "genre_ids": [
+                12,
+                14,
+                10751
+            ],
+            "original_language": "en",
+            "original_title": "Harry Potter and the Prisoner of Azkaban",
+            "popularity": 24.579402,
+            "title": "Harry Potter and the Prisoner of Azkaban",
+            "vote_average": 7.8,
+            "overview": "Harry, Ron and Hermione return to Hogwarts for another magic-filled year. Harry comes face to face with danger yet again, this time in the form of escaped convict, Sirius Black – and turns to sympathetic Professor Lupin for help.",
+            "release_date": "2004-06-04"
+        },
+        {
+            "character": "Hermione Granger",
+            "credit_id": "52fe44e19251416c75044389",
+            "release_date": "2010-11-19",
+            "vote_count": 7479,
+            "video": false,
+            "adult": false,
+            "vote_average": 7.6,
+            "title": "Harry Potter and the Deathly Hallows: Part 1",
+            "genre_ids": [
+                12,
+                14,
+                10751
+            ],
+            "original_language": "en",
+            "original_title": "Harry Potter and the Deathly Hallows: Part 1",
+            "popularity": 22.755491,
+            "id": 12444,
+            "backdrop_path": "/8YA36faYlkpfp6aozcGsqq68pZ9.jpg",
+            "overview": "Harry, Ron and Hermione walk away from their last year at Hogwarts to find and destroy the remaining Horcruxes, putting an end to Voldemort's bid for immortality. But with Harry's beloved Dumbledore dead and Voldemort's unscrupulous Death Eaters on the loose, the world is more dangerous than ever.",
+            "poster_path": "/maP4MTfPCeVD2FZbKTLUgriOW4R.jpg"
+        },
+        {
+            "character": "Hermione Granger",
+            "credit_id": "52fe44e29251416c75044589",
+            "poster_path": "/fTplI1NCSuEDP4ITLcTps739fcC.jpg",
+            "id": 12445,
+            "video": false,
+            "vote_count": 8093,
+            "adult": false,
+            "backdrop_path": "/6n0DAcyjTHS6888mt8U9ZsLy9nR.jpg",
+            "genre_ids": [
+                12,
+                14,
+                10751
+            ],
+            "original_language": "en",
+            "original_title": "Harry Potter and the Deathly Hallows: Part 2",
+            "popularity": 43.304367,
+            "title": "Harry Potter and the Deathly Hallows: Part 2",
+            "vote_average": 7.9,
+            "overview": "Harry, Ron and Hermione continue their quest to vanquish the evil Voldemort once and for all. Just as things begin to look hopeless for the young wizards, Harry discovers a trio of magical objects that endow him with powers to rival Voldemort's formidable skills.",
+            "release_date": "2011-07-15"
+        },
+        {
+            "character": "Lucy",
+            "credit_id": "52fe491ac3a368484e11a4b3",
+            "release_date": "2011-11-23",
+            "vote_count": 544,
+            "video": false,
+            "adult": false,
+            "vote_average": 6.7,
+            "title": "My Week with Marilyn",
+            "genre_ids": [
+                18
+            ],
+            "original_language": "en",
+            "original_title": "My Week with Marilyn",
+            "popularity": 9.828846,
+            "id": 75900,
+            "backdrop_path": "/ez5WJJ9VsFvOASh0nbm8L4lkdju.jpg",
+            "overview": "Sir Laurence Olivier is making a movie in London. Young Colin Clark, an eager film student, wants to be involved and he navigates himself a job on the set. When film star Marilyn Monroe arrives for the start of shooting, all of London is excited to see the blonde bombshell, while Olivier is struggling to meet her many demands and acting ineptness, and Colin is intrigued by her. Colin's intrigue is met when Marilyn invites him into her inner world where she struggles with her fame, her beauty and her desire to be a great actress.",
+            "poster_path": "/exyLhOls9XyWr5Eq5F8HX0I6mPu.jpg"
+        },
+        {
+            "character": "Ila",
+            "credit_id": "52fe49a39251416c910b3c81",
+            "poster_path": "/5wioUjzwr91fvq7ydunxK2CPSxi.jpg",
+            "id": 86834,
+            "video": false,
+            "vote_count": 3009,
+            "adult": false,
+            "backdrop_path": "/jnoJgpITphPoqA3e7JnNC4mtAVX.jpg",
+            "genre_ids": [
+                12,
+                18
+            ],
+            "original_language": "en",
+            "original_title": "Noah",
+            "popularity": 34.349473,
+            "title": "Noah",
+            "vote_average": 5.5,
+            "overview": "A man who suffers visions of an apocalyptic deluge takes measures to protect his family from the coming flood.",
+            "release_date": "2014-03-26"
+        },
+        {
+            "character": "Nicki Moore",
+            "credit_id": "52fe49c79251416c750d2ef7",
+            "release_date": "2013-06-21",
+            "vote_count": 1544,
+            "video": false,
+            "adult": false,
+            "vote_average": 5.3,
+            "title": "The Bling Ring",
+            "genre_ids": [
+                80,
+                18
+            ],
+            "original_language": "en",
+            "original_title": "The Bling Ring",
+            "popularity": 12.052249,
+            "id": 96936,
+            "backdrop_path": "/nq4fAIN7oIn3NUP4mqZZACmhMAo.jpg",
+            "overview": "Inspired by actual events, a group of fame-obsessed teenagers use the Internet to track celebrities' whereabouts in order to rob their homes.",
+            "poster_path": "/9Z2KAOP1X3ACE22moHu9QdYUK7U.jpg"
+        },
+        {
+            "character": "Sam",
+            "credit_id": "53173900c3a368136e0029f1",
+            "release_date": "2012-09-21",
+            "vote_count": 3817,
+            "video": false,
+            "adult": false,
+            "vote_average": 7.7,
+            "title": "The Perks of Being a Wallflower",
+            "genre_ids": [
+                18
+            ],
+            "original_language": "en",
+            "original_title": "The Perks of Being a Wallflower",
+            "popularity": 26.29311,
+            "id": 84892,
+            "backdrop_path": "/ncsbzGl0r3wRWFWQMREATaFoywm.jpg",
+            "overview": "A coming-of-age story based on the best-selling novel by Stephen Chbosky, which follows 15-year-old freshman Charlie, an endearing and naive outsider who is taken under the wings of two seniors. A moving tale of love, loss, fear and hope - and the unforgettable friends that help us through life.",
+            "poster_path": "/cyNQLnHnXZcTUDXVVSEYmquOTOI.jpg"
+        },
+        {
+            "character": "Emma Watson",
+            "credit_id": "52fe4ab2c3a36847f81dcf3b",
+            "poster_path": "/bmdv8Fshq0ZUt1jfyVusJGz8wAf.jpg",
+            "id": 109414,
+            "video": false,
+            "vote_count": 2892,
+            "adult": false,
+            "backdrop_path": "/s7p708Zf4a3CxXZeqEJN0YoU3x.jpg",
+            "genre_ids": [
+                28,
+                35
+            ],
+            "original_language": "en",
+            "original_title": "This Is the End",
+            "popularity": 32.322087,
+            "title": "This Is the End",
+            "vote_average": 6.2,
+            "overview": "While attending a party at James Franco's house, Seth Rogen, Jay Baruchel and many other celebrities are faced with the apocalypse.",
+            "release_date": "2013-06-12"
+        },
+        {
+            "character": "Hermione Granger",
+            "credit_id": "531736ea92514138c00010a3",
+            "poster_path": "/dCtFvscYcXQKTNvyyaQr2g2UacJ.jpg",
+            "id": 671,
+            "video": false,
+            "vote_count": 9463,
+            "adult": false,
+            "backdrop_path": "/vYZvThuxWBmjXOyRK5IoY9kOSq9.jpg",
+            "genre_ids": [
+                12,
+                14,
+                10751
+            ],
+            "original_language": "en",
+            "original_title": "Harry Potter and the Philosopher's Stone",
+            "popularity": 36.470214,
+            "title": "Harry Potter and the Philosopher's Stone",
+            "vote_average": 7.6,
+            "overview": "Harry Potter has lived under the stairs at his aunt and uncle's house his whole life. But on his 11th birthday, he learns he's a powerful wizard -- with a place waiting for him at the Hogwarts School of Witchcraft and Wizardry. As he learns to harness his newfound powers with the help of the school's kindly headmaster, Harry uncovers the truth about his parents' deaths -- and about the villain who's to blame.",
+            "release_date": "2001-11-16"
+        },
+        {
+            "character": "Pauline Fossil",
+            "credit_id": "52fe43e9c3a368484e005729",
+            "poster_path": "/6ToVeBxxJVMbXnLktGcuTuALcxU.jpg",
+            "id": 20497,
+            "video": false,
+            "vote_count": 124,
+            "adult": false,
+            "backdrop_path": "/bvAWDh5CpRDN0HAm4oDS9V2PQ7G.jpg",
+            "genre_ids": [
+                18,
+                10751,
+                10770
+            ],
+            "original_language": "en",
+            "original_title": "Ballet Shoes",
+            "popularity": 15.085869,
+            "title": "Ballet Shoes",
+            "vote_average": 6.4,
+            "overview": "An unusual explorer named Gum and his kindly niece adopt three orphans -- Pauline, Petrova and Posy -- and raise them as sisters in 1930s London. But the girls must fend for themselves when Gum doesn't return from one of his adventures. Together, they nurture their passions for acting, aviation and ballet in this charming TV adaptation of Noel Streatfield's novel.",
+            "release_date": "2008-08-26"
+        },
+        {
+            "character": "Lena",
+            "credit_id": "54b97920c3a3686c6b005b95",
+            "release_date": "2016-04-15",
+            "vote_count": 767,
+            "video": false,
+            "adult": false,
+            "vote_average": 7.4,
+            "title": "Colonia",
+            "genre_ids": [
+                18,
+                36,
+                53,
+                10749
+            ],
+            "original_language": "en",
+            "original_title": "Colonia",
+            "popularity": 12.77175,
+            "id": 318781,
+            "backdrop_path": "/3Sfjr8UCYrbtDubyDA0MCFjDccI.jpg",
+            "overview": "A young woman's desperate search for her abducted boyfriend that draws her into the infamous Colonia Dignidad, a sect nobody ever escaped from.",
+            "poster_path": "/buEhROtfCEFNhjPWdJVgeVnrThj.jpg"
+        },
+        {
+            "character": "Angela Gray",
+            "credit_id": "52fe4eb5c3a36847f82a2cf5",
+            "poster_path": "/d1dtQQfJJWU31cGSFbfhyeLtsTm.jpg",
+            "id": 241257,
+            "video": false,
+            "vote_count": 736,
+            "adult": false,
+            "backdrop_path": "/58bRLKnNL2KR4V36ql5vuhbEayx.jpg",
+            "genre_ids": [
+                27,
+                9648,
+                53
+            ],
+            "original_language": "en",
+            "original_title": "Regression",
+            "popularity": 10.553845,
+            "title": "Regression",
+            "vote_average": 5.4,
+            "overview": "Minnesota, 1990. Detective Bruce Kenner investigates the case of young Angela, who accuses her father, John Gray, of an unspeakable crime. When John unexpectedly and without recollection admits guilt, renowned psychologist Dr. Raines is brought in to help him relive his memories and what they discover unmasks a horrifying nationwide mystery.",
+            "release_date": "2016-02-05"
+        },
+        {
+            "character": "Belle",
+            "credit_id": "58fe343fc3a3687a2a030e31",
+            "poster_path": "/tWqifoYuwLETmmasnGHO7xBjEtt.jpg",
+            "id": 321612,
+            "video": false,
+            "vote_count": 8090,
+            "adult": false,
+            "backdrop_path": "/6aUWe0GSl69wMTSWWexsorMIvwU.jpg",
+            "genre_ids": [
+                14,
+                10749,
+                10751
+            ],
+            "original_language": "en",
+            "original_title": "Beauty and the Beast",
+            "popularity": 204.430649,
+            "title": "Beauty and the Beast",
+            "vote_average": 6.8,
+            "overview": "A live-action adaptation of Disney's version of the classic tale of a cursed prince and a beautiful young woman who helps him break the spell.",
+            "release_date": "2017-03-17"
+        },
+        {
+            "character": "Mae Holland",
+            "credit_id": "558ca9ad9251416939001712",
+            "poster_path": "/bQVqd5rWrx5GbXhJNuvKy4Viz6j.jpg",
+            "id": 339988,
+            "video": false,
+            "vote_count": 1737,
+            "adult": false,
+            "backdrop_path": "/hENBbG0J4zf4fFB3OVAC50poojR.jpg",
+            "genre_ids": [
+                18,
+                878,
+                53
+            ],
+            "original_language": "en",
+            "original_title": "The Circle",
+            "popularity": 17.042811,
+            "title": "The Circle",
+            "vote_average": 5.4,
+            "overview": "A young tech worker takes a job at a powerful Internet corporation, quickly rises up the company's ranks, and soon finds herself in a perilous situation concerning privacy, surveillance and freedom. She comes to learn that her decisions and actions will determine the future of humanity.",
+            "release_date": "2017-04-28"
+        },
+        {
+            "character": "Herself",
+            "credit_id": "56a2d6ac92514171ff0010e5",
+            "release_date": "2009-11-17",
+            "vote_count": 13,
+            "video": false,
+            "adult": false,
+            "vote_average": 7.2,
+            "title": "Creating The World of Harry Potter, Part 1: The Magic Begins",
+            "genre_ids": [
+                99
+            ],
+            "original_language": "en",
+            "original_title": "Creating The World of Harry Potter, Part 1: The Magic Begins",
+            "popularity": 1.748629,
+            "id": 376816,
+            "backdrop_path": null,
+            "overview": "The magic begins. The choices, the breakthroughs, the early decisions that impacted all the films are explored here via rare footage, cast and crew reminiscences and more. Learn about the extensive search by producer David Heyman and director Chris Columbus for the perfect actors to portray Harry, Ron and Hermione and see the earliest meeting of Daniel Radcliffe, Rupert Grint and Emma Watson.  Be on the scene as imagination and know-how combine to create a look that's distinctly wizardly. From details tiny (what about Hermione's buckteeth?) to huge (Quidditch, anyone?), this is the fun and fascinating opening of a whole new portal into Harry's world. Begin the magic.",
+            "poster_path": "/5KiMGwcO95vldDpitep9PR7duYn.jpg"
+        },
+        {
+            "character": "Princess Pea (voice)",
+            "credit_id": "52fe43409251416c750093cb",
+            "poster_path": "/8Nge4rXAQzU5w9U8OvnXuuJltL9.jpg",
+            "id": 10199,
+            "video": false,
+            "vote_count": 333,
+            "adult": false,
+            "backdrop_path": "/3ZmsKrY96jFXtpOIpYOsJD8pEXF.jpg",
+            "genre_ids": [
+                12,
+                16,
+                10751
+            ],
+            "original_language": "en",
+            "original_title": "The Tale of Despereaux",
+            "popularity": 15.193437,
+            "title": "The Tale of Despereaux",
+            "vote_average": 5.8,
+            "overview": "Once upon a time... in the far away kingdom of Dor... lived a brave and virtuous mouse with comically oversized ears who dreamt of becoming a knight. Banished from his home for having such lofty ambitions, Despereaux sets off on an amazing adventure with his good-hearted rat friend Roscuro, who leads him, at long last, on a very noble quest to rescue an endangered princess and save an entire kingdom from darkness.",
+            "release_date": "2008-12-19"
+        },
+        {
+            "character": "Hermione Granger",
+            "credit_id": "59f4afb292514179dd011f82",
+            "poster_path": "/ycPuj1fbbzdVzKPNUh8uBL9j4tZ.jpg",
+            "id": 483898,
+            "video": true,
+            "vote_count": 2,
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                99
+            ],
+            "original_language": "en",
+            "original_title": "50 Greatest Harry Potter Moments",
+            "popularity": 1.380565,
+            "title": "50 Greatest Harry Potter Moments",
+            "vote_average": 9,
+            "overview": "To mark the release two weeks ago of the eighth and final movie in the series, Robbie Coltrane narrates a countdown of the movie franchise's best moments. From Harry's first meeting with Ron and Hermione aboard the Hogwarts Express through to magical mysteries.",
+            "release_date": "2011-07-27"
+        }
+    ],
+    "crew": [],
+    "id": 10990
+}
+
+
+
+8)details with imdb id (infinity war)
+
+https://api.themoviedb.org/3/movie/tt4154756?api_key=3f0a291b35d827d21951f5dec2a2505c&language=en-US
+
+
+{
+    "adult": false,
+    "backdrop_path": "/bOGkgRGdhrBYJSLpXaxhXVstddV.jpg",
+    "belongs_to_collection": {
+        "id": 86311,
+        "name": "The Avengers Collection",
+        "poster_path": "/qJawKUQcIBha507UahUlX0keOT7.jpg",
+        "backdrop_path": "/zuW6fOiusv4X9nnW3paHGfXcSll.jpg"
+    },
+    "budget": 300000000,
+    "genres": [
+        {
+            "id": 12,
+            "name": "Adventure"
+        },
+        {
+            "id": 878,
+            "name": "Science Fiction"
+        },
+        {
+            "id": 14,
+            "name": "Fantasy"
+        },
+        {
+            "id": 28,
+            "name": "Action"
+        }
+    ],
+    "homepage": "http://marvel.com/movies/movie/223/avengers_infinity_war_part_1",
+    "id": 299536,
+    "imdb_id": "tt4154756",
+    "original_language": "en",
+    "original_title": "Avengers: Infinity War",
+    "overview": "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
+    "popularity": 724.420399,
+    "poster_path": "/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+    "production_companies": [
+        {
+            "id": 2,
+            "logo_path": "/4MbjW4f9bu6LvlDmyIvfyuT3boj.png",
+            "name": "Walt Disney Pictures",
+            "origin_country": "US"
+        },
+        {
+            "id": 420,
+            "logo_path": "/hUzeosd33nzE5MCNsZxCGEKTXaQ.png",
+            "name": "Marvel Studios",
+            "origin_country": "US"
+        }
+    ],
+    "production_countries": [
+        {
+            "iso_3166_1": "US",
+            "name": "United States of America"
+        }
+    ],
+    "release_date": "2018-04-25",
+    "revenue": 840564408,
+    "runtime": 149,
+    "spoken_languages": [
+        {
+            "iso_639_1": "en",
+            "name": "English"
+        }
+    ],
+    "status": "Released",
+    "tagline": "An entire universe. Once and for all.",
+    "title": "Avengers: Infinity War",
+    "video": false,
+    "vote_average": 8.699999999999999,
+    "vote_count": 2096
+}
